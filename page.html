@@ -8,7 +8,112 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -18,7 +123,7 @@
 
       body {
         font-weight: 400;
-        font-style:normal;
+        font-style: normal;
         text-decoration: undefined;
         text-transform: undefined;
         letter-spacing: 0.01em;
@@ -76,17 +181,23 @@
               <div class="navigation-container3">
                 <style>
                   @media (prefers-reduced-motion: reduce) {
-                  .navigation-logo, .navigation-link, .navigation-social-link, .navigation-toggle, .navigation-mobile-close, .navigation-mobile-link, .navigation-mobile-social-link {
-                    transition: none;
-                  }
-                  .navigation-mobile-overlay {
-                    transition: none;
-                  }
-                  .navigation-mobile-link {
-                    animation: none;
-                    opacity: 1;
-                    transform: none;
-                  }
+                    .navigation-logo,
+                    .navigation-link,
+                    .navigation-social-link,
+                    .navigation-toggle,
+                    .navigation-mobile-close,
+                    .navigation-mobile-link,
+                    .navigation-mobile-social-link {
+                      transition: none;
+                    }
+                    .navigation-mobile-overlay {
+                      transition: none;
+                    }
+                    .navigation-mobile-link {
+                      animation: none;
+                      opacity: 1;
+                      transform: none;
+                    }
                   }
                 </style>
               </div>
@@ -101,7 +212,6 @@
                     <span class="section-title">
                       <span>Звук Вокруг</span>
                       <br />
-                      Студия ХоМузыка
                     </span>
                   </div>
                 </a>
@@ -278,7 +388,7 @@
                 <div class="navigation-mobile-header">
                   <a href="#">
                     <div aria-label="Главная" class="navigation-mobile-logo">
-                      <span class="section-title">Студия ХоМузыка</span>
+                      <span class="section-title"></span>
                     </div>
                   </a>
                   <button
@@ -464,53 +574,72 @@
             <div class="navigation-container4">
               <div class="navigation-container5">
                 <style>
-                          @keyframes gradientShift {0%,100% {background-position: 0% 50%;}
-                  50% {background-position: 100% 50%;}}@keyframes slideInLeft {to {opacity: 1;
-                  transform: translateX(0);}}
+                  @keyframes gradientShift {
+                    0%,
+                    100% {
+                      background-position: 0% 50%;
+                    }
+                    50% {
+                      background-position: 100% 50%;
+                    }
+                  }
+                  @keyframes slideInLeft {
+                    to {
+                      opacity: 1;
+                      transform: translateX(0);
+                    }
+                  }
                 </style>
               </div>
             </div>
             <div class="navigation-container6">
               <div class="navigation-container7">
                 <script defer="" data-name="navigation-mobile-menu">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      const navToggle = document.getElementById("navToggle")
-                      const navClose = document.getElementById("navClose")
-                      const navOverlay = document.getElementById("navOverlay")
-                      const navLinks = document.querySelectorAll(".navigation-mobile-link")
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const navToggle = document.getElementById("navToggle");
+                      const navClose = document.getElementById("navClose");
+                      const navOverlay = document.getElementById("navOverlay");
+                      const navLinks = document.querySelectorAll(
+                        ".navigation-mobile-link"
+                      );
 
                       function openMenu() {
-                        navOverlay.classList.add("navigation-mobile-open")
-                        navToggle.setAttribute("aria-expanded", "true")
-                        document.body.style.overflow = "hidden"
+                        navOverlay.classList.add("navigation-mobile-open");
+                        navToggle.setAttribute("aria-expanded", "true");
+                        document.body.style.overflow = "hidden";
                       }
 
                       function closeMenu() {
-                        navOverlay.classList.remove("navigation-mobile-open")
-                        navToggle.setAttribute("aria-expanded", "false")
-                        document.body.style.overflow = ""
+                        navOverlay.classList.remove("navigation-mobile-open");
+                        navToggle.setAttribute("aria-expanded", "false");
+                        document.body.style.overflow = "";
                       }
 
-                      navToggle.addEventListener("click", openMenu)
-                      navClose.addEventListener("click", closeMenu)
+                      navToggle.addEventListener("click", openMenu);
+                      navClose.addEventListener("click", closeMenu);
 
                       navLinks.forEach((link) => {
-                        link.addEventListener("click", closeMenu)
-                      })
+                        link.addEventListener("click", closeMenu);
+                      });
 
                       navOverlay.addEventListener("click", (e) => {
                         if (e.target === navOverlay) {
-                          closeMenu()
+                          closeMenu();
                         }
-                      })
+                      });
 
                       document.addEventListener("keydown", (e) => {
-                        if (e.key === "Escape" && navOverlay.classList.contains("navigation-mobile-open")) {
-                          closeMenu()
+                        if (
+                          e.key === "Escape" &&
+                          navOverlay.classList.contains(
+                            "navigation-mobile-open"
+                          )
+                        ) {
+                          closeMenu();
                         }
-                      })
-                    })()
+                      });
+                    })();
                   });
                 </script>
               </div>
@@ -535,7 +664,6 @@
                     <br />
                     <span>Жирова&nbsp;</span>
                     <br />
-                    Екатерина Мельникова
                   </h1>
                   <p class="founder-hero-role">Основатель и Педагог</p>
                   <p
@@ -1104,12 +1232,23 @@
           <div class="page-container3">
             <style>
               @media (prefers-reduced-motion: reduce) {
-              .founder-hero-image, .teacher-card, .teacher-card-image, .pedagogy-item, .gallery-video-image, .gallery-video-player, .gallery-video-play-btn, .founder-bio-gallery-img {
-                transition: none;
-              }
-              .founder-hero-image:hover, .teacher-card:hover, .pedagogy-item:hover, .gallery-video-play-btn:hover, .founder-bio-gallery-img:hover {
-                transform: none;
-              }
+                .founder-hero-image,
+                .teacher-card,
+                .teacher-card-image,
+                .pedagogy-item,
+                .gallery-video-image,
+                .gallery-video-player,
+                .gallery-video-play-btn,
+                .founder-bio-gallery-img {
+                  transition: none;
+                }
+                .founder-hero-image:hover,
+                .teacher-card:hover,
+                .pedagogy-item:hover,
+                .gallery-video-play-btn:hover,
+                .founder-bio-gallery-img:hover {
+                  transform: none;
+                }
               }
             </style>
           </div>
@@ -1117,42 +1256,46 @@
         <div class="page-container4">
           <div class="page-container5">
             <script defer="" data-name="gallery-video-player">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  const videoItems = document.querySelectorAll(".gallery-video-video")
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
+                  const videoItems = document.querySelectorAll(
+                    ".gallery-video-video"
+                  );
 
                   videoItems.forEach((item) => {
-                    const video = item.querySelector(".gallery-video-player")
-                    const playBtn = item.querySelector(".gallery-video-play-btn")
+                    const video = item.querySelector(".gallery-video-player");
+                    const playBtn = item.querySelector(
+                      ".gallery-video-play-btn"
+                    );
 
                     if (playBtn && video) {
                       playBtn.addEventListener("click", () => {
                         if (video.paused) {
-                          video.play()
-                          playBtn.style.opacity = "0"
-                          playBtn.style.pointerEvents = "none"
+                          video.play();
+                          playBtn.style.opacity = "0";
+                          playBtn.style.pointerEvents = "none";
                         } else {
-                          video.pause()
-                          playBtn.style.opacity = "1"
-                          playBtn.style.pointerEvents = "auto"
+                          video.pause();
+                          playBtn.style.opacity = "1";
+                          playBtn.style.pointerEvents = "auto";
                         }
-                      })
+                      });
 
                       video.addEventListener("click", () => {
                         if (!video.paused) {
-                          video.pause()
-                          playBtn.style.opacity = "1"
-                          playBtn.style.pointerEvents = "auto"
+                          video.pause();
+                          playBtn.style.opacity = "1";
+                          playBtn.style.pointerEvents = "auto";
                         }
-                      })
+                      });
 
                       video.addEventListener("ended", () => {
-                        playBtn.style.opacity = "1"
-                        playBtn.style.pointerEvents = "auto"
-                      })
+                        playBtn.style.opacity = "1";
+                        playBtn.style.pointerEvents = "auto";
+                      });
                     }
-                  })
-                })()
+                  });
+                })();
               });
             </script>
           </div>
@@ -1166,10 +1309,7 @@
                 <div class="footer-grid">
                   <div class="footer-column footer-brand-column">
                     <h2 class="footer-brand-title">Звук Вокруг</h2>
-                    <p class="footer-brand-tagline">
-                      Уютная музыкальная школа-студия в районе
-                      "Хорошёво-Мнёвники"
-                    </p>
+                    <p class="footer-brand-tagline"></p>
                     <div class="footer-social-group">
                       <span class="footer-social-label">
                         Присоединяйтесь к нам:
@@ -1275,7 +1415,7 @@
                     <nav class="footer-nav-links">
                       <a href="index.html">
                         <div class="footer-thq-footer-link-elm1 footer-link">
-                          <span>Homepage</span>
+                          <span>Домашняя Страница</span>
                         </div>
                       </a>
                       <a href="page.html">
@@ -1430,15 +1570,19 @@
               <div class="footer-container3">
                 <style>
                   @media (prefers-reduced-motion: reduce) {
-                  .footer-social-icon, .footer-link, .footer-contact-link, .footer-cta-link, .footer-legal-link {
-                    transition: none;
-                  }
-                  .footer-social-icon:hover {
-                    transform: none;
-                  }
-                  .footer-cta-link:hover {
-                    transform: none;
-                  }
+                    .footer-social-icon,
+                    .footer-link,
+                    .footer-contact-link,
+                    .footer-cta-link,
+                    .footer-legal-link {
+                      transition: none;
+                    }
+                    .footer-social-icon:hover {
+                      transform: none;
+                    }
+                    .footer-cta-link:hover {
+                      transform: none;
+                    }
                   }
                 </style>
               </div>
@@ -1446,29 +1590,33 @@
             <div class="footer-container4">
               <div class="footer-container5">
                 <script defer="" data-name="footer-interactions">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      const footerSocialIcons = document.querySelectorAll(".footer-social-icon")
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const footerSocialIcons = document.querySelectorAll(
+                        ".footer-social-icon"
+                      );
 
                       footerSocialIcons.forEach((icon) => {
                         icon.addEventListener("mouseenter", function () {
-                          this.style.transform = "translateY(-4px) rotate(5deg)"
-                        })
+                          this.style.transform =
+                            "translateY(-4px) rotate(5deg)";
+                        });
 
                         icon.addEventListener("mouseleave", function () {
-                          this.style.transform = "translateY(0) rotate(0deg)"
-                        })
-                      })
+                          this.style.transform = "translateY(0) rotate(0deg)";
+                        });
+                      });
 
-                      const footerLinks = document.querySelectorAll(".footer-link")
+                      const footerLinks =
+                        document.querySelectorAll(".footer-link");
                       footerLinks.forEach((link) => {
                         link.addEventListener("click", function (e) {
                           if (this.getAttribute("href") === "#") {
-                            e.preventDefault()
+                            e.preventDefault();
                           }
-                        })
-                      })
-                    })()
+                        });
+                      });
+                    })();
                   });
                 </script>
               </div>
