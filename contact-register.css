@@ -223,3 +223,15 @@
 .contact-register-container28 {
   display: contents;
 }
+
+/* Mobile adjustments: чуть меньше заголовок и субтайтл (принудительно) */
+@media (max-width: 767px) {
+  .social-cta__title {
+    font-size: calc(var(--font-size-3xl) - 3px) !important;
+  }
+  .social-cta__subtitle {
+    font-size: calc(var(--font-size-lg) - 3px) !important;
+    max-width: 46rem;
+  }
+}
+
