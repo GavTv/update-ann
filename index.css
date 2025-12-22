@@ -206,3 +206,10 @@
     height: 300px;
   }
 }
+
+/* Desktop-only: nudge the second features image slightly down */
+@media (min-width: 768px) {
+  .home-thq-features-image-elm2 {
+    transform: translateY(16px);
+  }
+}
