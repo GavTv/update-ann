@@ -179,10 +179,24 @@
 .home-container5 {
   display: contents;
 }
+
+/* Slightly reduce hero title size site-wide (desktop + responsive) */
+.home-thq-hero-title-elm {
+  font-size: clamp(2.4rem, 2.1rem + 2vw, 3.2rem);
+}
  
 @media(max-width: 479px) {
   .home-thq-hero-title-elm {
-    font-size: 32px;
+    font-size: 28px;
+  }
+}
+
+/* Apply same reduced size for small/medium mobile (up to 767px) */
+@media (max-width: 767px) {
+  .home-thq-hero-title-elm,
+  .home-hero-title,
+  .hero-title {
+    font-size: 28px;
   }
   .home-text2 {
     font-size: 25px;
