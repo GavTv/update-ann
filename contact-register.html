@@ -8,7 +8,112 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
     <style data-tag="default-style-sheet">
       html {
@@ -18,7 +123,7 @@
 
       body {
         font-weight: 400;
-        font-style:normal;
+        font-style: normal;
         text-decoration: undefined;
         text-transform: undefined;
         letter-spacing: 0.01em;
@@ -76,17 +181,23 @@
               <div class="navigation-container3">
                 <style>
                   @media (prefers-reduced-motion: reduce) {
-                  .navigation-logo, .navigation-link, .navigation-social-link, .navigation-toggle, .navigation-mobile-close, .navigation-mobile-link, .navigation-mobile-social-link {
-                    transition: none;
-                  }
-                  .navigation-mobile-overlay {
-                    transition: none;
-                  }
-                  .navigation-mobile-link {
-                    animation: none;
-                    opacity: 1;
-                    transform: none;
-                  }
+                    .navigation-logo,
+                    .navigation-link,
+                    .navigation-social-link,
+                    .navigation-toggle,
+                    .navigation-mobile-close,
+                    .navigation-mobile-link,
+                    .navigation-mobile-social-link {
+                      transition: none;
+                    }
+                    .navigation-mobile-overlay {
+                      transition: none;
+                    }
+                    .navigation-mobile-link {
+                      animation: none;
+                      opacity: 1;
+                      transform: none;
+                    }
                   }
                 </style>
               </div>
@@ -461,53 +572,72 @@
             <div class="navigation-container4">
               <div class="navigation-container5">
                 <style>
-                          @keyframes gradientShift {0%,100% {background-position: 0% 50%;}
-                  50% {background-position: 100% 50%;}}@keyframes slideInLeft {to {opacity: 1;
-                  transform: translateX(0);}}
+                  @keyframes gradientShift {
+                    0%,
+                    100% {
+                      background-position: 0% 50%;
+                    }
+                    50% {
+                      background-position: 100% 50%;
+                    }
+                  }
+                  @keyframes slideInLeft {
+                    to {
+                      opacity: 1;
+                      transform: translateX(0);
+                    }
+                  }
                 </style>
               </div>
             </div>
             <div class="navigation-container6">
               <div class="navigation-container7">
                 <script defer="" data-name="navigation-mobile-menu">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      const navToggle = document.getElementById("navToggle")
-                      const navClose = document.getElementById("navClose")
-                      const navOverlay = document.getElementById("navOverlay")
-                      const navLinks = document.querySelectorAll(".navigation-mobile-link")
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const navToggle = document.getElementById("navToggle");
+                      const navClose = document.getElementById("navClose");
+                      const navOverlay = document.getElementById("navOverlay");
+                      const navLinks = document.querySelectorAll(
+                        ".navigation-mobile-link"
+                      );
 
                       function openMenu() {
-                        navOverlay.classList.add("navigation-mobile-open")
-                        navToggle.setAttribute("aria-expanded", "true")
-                        document.body.style.overflow = "hidden"
+                        navOverlay.classList.add("navigation-mobile-open");
+                        navToggle.setAttribute("aria-expanded", "true");
+                        document.body.style.overflow = "hidden";
                       }
 
                       function closeMenu() {
-                        navOverlay.classList.remove("navigation-mobile-open")
-                        navToggle.setAttribute("aria-expanded", "false")
-                        document.body.style.overflow = ""
+                        navOverlay.classList.remove("navigation-mobile-open");
+                        navToggle.setAttribute("aria-expanded", "false");
+                        document.body.style.overflow = "";
                       }
 
-                      navToggle.addEventListener("click", openMenu)
-                      navClose.addEventListener("click", closeMenu)
+                      navToggle.addEventListener("click", openMenu);
+                      navClose.addEventListener("click", closeMenu);
 
                       navLinks.forEach((link) => {
-                        link.addEventListener("click", closeMenu)
-                      })
+                        link.addEventListener("click", closeMenu);
+                      });
 
                       navOverlay.addEventListener("click", (e) => {
                         if (e.target === navOverlay) {
-                          closeMenu()
+                          closeMenu();
                         }
-                      })
+                      });
 
                       document.addEventListener("keydown", (e) => {
-                        if (e.key === "Escape" && navOverlay.classList.contains("navigation-mobile-open")) {
-                          closeMenu()
+                        if (
+                          e.key === "Escape" &&
+                          navOverlay.classList.contains(
+                            "navigation-mobile-open"
+                          )
+                        ) {
+                          closeMenu();
                         }
-                      })
-                    })()
+                      });
+                    })();
                   });
                 </script>
               </div>
@@ -787,33 +917,45 @@
         <div class="contact-register-container11">
           <div class="contact-register-container12">
             <script defer="" data-name="feedback-form-dynamic">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  ;(function () {
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
+                  (function () {
                     const disciplineImages = {
-                      guitar: "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      vocal: "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      piano: "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ukulele: "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      songwriting: "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ensemble: "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    }
+                      guitar:
+                        "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      vocal:
+                        "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      piano:
+                        "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ukulele:
+                        "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      songwriting:
+                        "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ensemble:
+                        "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    };
 
-                    const disciplineSelect = document.getElementById("discipline")
-                    const disciplineImage = document.getElementById("disciplineImage")
+                    const disciplineSelect =
+                      document.getElementById("discipline");
+                    const disciplineImage =
+                      document.getElementById("disciplineImage");
 
                     disciplineSelect.addEventListener("change", function () {
-                      const selectedDiscipline = this.value
-                      if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
-                        disciplineImage.style.opacity = "0"
+                      const selectedDiscipline = this.value;
+                      if (
+                        selectedDiscipline &&
+                        disciplineImages[selectedDiscipline]
+                      ) {
+                        disciplineImage.style.opacity = "0";
                         setTimeout(() => {
-                          disciplineImage.src = disciplineImages[selectedDiscipline]
-                          disciplineImage.style.opacity = "1"
-                        }, 200)
+                          disciplineImage.src =
+                            disciplineImages[selectedDiscipline];
+                          disciplineImage.style.opacity = "1";
+                        }, 200);
                       }
-                    })
-                  })()
-                })()
+                    });
+                  })();
+                })();
               });
             </script>
           </div>
@@ -1021,62 +1163,85 @@
           <div class="contact-register-container14">
             <div class="contact-register-container15">
               <script defer="" data-name="feedback-form-interactive">
-                document.addEventListener('DOMContentLoaded', function() {
-                  (function(){
+                document.addEventListener("DOMContentLoaded", function () {
+                  (function () {
                     const disciplineImages = {
-                      guitar: "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      vocal: "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      piano: "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ukulele: "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      songwriting: "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ensemble: "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    }
+                      guitar:
+                        "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      vocal:
+                        "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      piano:
+                        "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ukulele:
+                        "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      songwriting:
+                        "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ensemble:
+                        "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    };
 
                     const teachersByDiscipline = {
                       guitar: ["Александр", "Борис", "Кирилл"],
-                      vocal: ["Анастасия", "Александра", "Иван (Эстрадный вокал)"],
+                      vocal: [
+                        "Анастасия",
+                        "Александра",
+                        "Иван (Эстрадный вокал)",
+                      ],
                       piano: ["Скоро появится"],
                       ukulele: ["Борис"],
                       songwriting: ["Скоро появится"],
                       ensemble: ["Скоро появится"],
-                    }
+                    };
 
-                    const disciplineSelect = document.getElementById("discipline")
-                    const teacherSelect = document.getElementById("teacher")
-                    const disciplineImage = document.getElementById("disciplineImage")
+                    const disciplineSelect =
+                      document.getElementById("discipline");
+                    const teacherSelect = document.getElementById("teacher");
+                    const disciplineImage =
+                      document.getElementById("disciplineImage");
 
                     disciplineSelect.addEventListener("change", function () {
-                      const selectedDiscipline = this.value
+                      const selectedDiscipline = this.value;
 
-                      if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
-                        disciplineImage.style.opacity = "0"
+                      if (
+                        selectedDiscipline &&
+                        disciplineImages[selectedDiscipline]
+                      ) {
+                        disciplineImage.style.opacity = "0";
 
                         setTimeout(() => {
-                          disciplineImage.src = disciplineImages[selectedDiscipline]
-                          disciplineImage.style.opacity = "1"
-                        }, 250)
+                          disciplineImage.src =
+                            disciplineImages[selectedDiscipline];
+                          disciplineImage.style.opacity = "1";
+                        }, 250);
                       }
 
-                      teacherSelect.innerHTML = '<option value="">Выберите...</option>'
+                      teacherSelect.innerHTML =
+                        '<option value="">Выберите...</option>';
 
-                      if (selectedDiscipline && teachersByDiscipline[selectedDiscipline]) {
-                        const teachers = teachersByDiscipline[selectedDiscipline]
+                      if (
+                        selectedDiscipline &&
+                        teachersByDiscipline[selectedDiscipline]
+                      ) {
+                        const teachers =
+                          teachersByDiscipline[selectedDiscipline];
                         teachers.forEach((teacher) => {
-                          const option = document.createElement("option")
-                          option.value = teacher.toLowerCase().replace(/\s+/g, "-")
-                          option.textContent = teacher
-                          teacherSelect.appendChild(option)
-                        })
-                        teacherSelect.disabled = false
+                          const option = document.createElement("option");
+                          option.value = teacher
+                            .toLowerCase()
+                            .replace(/\s+/g, "-");
+                          option.textContent = teacher;
+                          teacherSelect.appendChild(option);
+                        });
+                        teacherSelect.disabled = false;
                       } else {
-                        const option = document.createElement("option")
-                        option.value = ""
-                        option.textContent = "Сначала выберите дисциплину"
-                        teacherSelect.appendChild(option)
-                        teacherSelect.disabled = true
+                        const option = document.createElement("option");
+                        option.value = "";
+                        option.textContent = "Сначала выберите дисциплину";
+                        teacherSelect.appendChild(option);
+                        teacherSelect.disabled = true;
                       }
-                    })
-                  })()
+                    });
+                  })();
                 });
               </script>
             </div>
@@ -1243,77 +1408,100 @@
         <div class="contact-register-container16">
           <div class="contact-register-container17">
             <style>
-                      @keyframes fadeIn {from {opacity: 0;
-              transform: translateY(10px);}
-              to {opacity: 1;
-              transform: translateY(0);}}
+              @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                  transform: translateY(10px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
             </style>
           </div>
         </div>
         <div class="contact-register-container18">
           <div class="contact-register-container19">
             <script defer="" data-name="contact-interactions">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
-                  const copyPhone = document.getElementById("copyPhone")
-                  const copyEmail = document.getElementById("copyEmail")
-                  const copyAddress = document.getElementById("copyAddress")
-                  const phoneValue = document.getElementById("phoneValue")
-                  const emailValue = document.getElementById("emailValue")
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
+                  const copyPhone = document.getElementById("copyPhone");
+                  const copyEmail = document.getElementById("copyEmail");
+                  const copyAddress = document.getElementById("copyAddress");
+                  const phoneValue = document.getElementById("phoneValue");
+                  const emailValue = document.getElementById("emailValue");
 
                   function copyToClipboard(text, button) {
                     navigator.clipboard.writeText(text).then(() => {
-                      const originalHTML = button.innerHTML
-                      button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"/></svg><span>Скопировано!</span>'
-                      button.style.background = "#2ecc71"
+                      const originalHTML = button.innerHTML;
+                      button.innerHTML =
+                        '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"/></svg><span>Скопировано!</span>';
+                      button.style.background = "#2ecc71";
 
                       setTimeout(() => {
-                        button.innerHTML = originalHTML
-                        button.style.background = ""
-                      }, 2000)
-                    })
+                        button.innerHTML = originalHTML;
+                        button.style.background = "";
+                      }, 2000);
+                    });
                   }
 
                   copyPhone.addEventListener("click", () => {
-                    copyToClipboard(phoneValue.textContent, copyPhone)
-                  })
+                    copyToClipboard(phoneValue.textContent, copyPhone);
+                  });
 
                   copyEmail.addEventListener("click", () => {
-                    copyToClipboard(emailValue.textContent, copyEmail)
-                  })
+                    copyToClipboard(emailValue.textContent, copyEmail);
+                  });
 
                   copyAddress.addEventListener("click", () => {
-                    copyToClipboard("Хорошёво-Мнёвники, Москва", copyAddress)
-                  })
+                    copyToClipboard("Хорошёво-Мнёвники, Москва", copyAddress);
+                  });
 
-                  const tabs = document.querySelectorAll(".disciplines-tabs__tab")
-                  const panels = document.querySelectorAll(".disciplines-tabs__panel")
+                  const tabs = document.querySelectorAll(
+                    ".disciplines-tabs__tab"
+                  );
+                  const panels = document.querySelectorAll(
+                    ".disciplines-tabs__panel"
+                  );
 
                   tabs.forEach((tab) => {
                     tab.addEventListener("click", () => {
-                      const targetPanel = tab.getAttribute("data-tab")
+                      const targetPanel = tab.getAttribute("data-tab");
 
-                      tabs.forEach((t) => t.classList.remove("disciplines-tabs__tab--active"))
-                      panels.forEach((p) => p.classList.remove("disciplines-tabs__panel--active"))
+                      tabs.forEach((t) =>
+                        t.classList.remove("disciplines-tabs__tab--active")
+                      );
+                      panels.forEach((p) =>
+                        p.classList.remove("disciplines-tabs__panel--active")
+                      );
 
-                      tab.classList.add("disciplines-tabs__tab--active")
-                      document.querySelector(`[data-panel="${targetPanel}"]`).classList.add("disciplines-tabs__panel--active")
-                    })
-                  })
+                      tab.classList.add("disciplines-tabs__tab--active");
+                      document
+                        .querySelector(`[data-panel="${targetPanel}"]`)
+                        .classList.add("disciplines-tabs__panel--active");
+                    });
+                  });
 
-                  const videoItems = document.querySelectorAll(".video-gallery__item--video")
+                  const videoItems = document.querySelectorAll(
+                    ".video-gallery__item--video"
+                  );
                   videoItems.forEach((item) => {
-                    const video = item.querySelector("video")
+                    const video = item.querySelector("video");
                     if (video) {
                       video.addEventListener("play", () => {
-                        item.querySelector(".video-gallery__play-overlay").style.display = "none"
-                      })
+                        item.querySelector(
+                          ".video-gallery__play-overlay"
+                        ).style.display = "none";
+                      });
                       video.addEventListener("pause", () => {
-                        item.querySelector(".video-gallery__play-overlay").style.display = "flex"
-                      })
+                        item.querySelector(
+                          ".video-gallery__play-overlay"
+                        ).style.display = "flex";
+                      });
                     }
-                  })
-                })()
+                  });
+                })();
               });
             </script>
           </div>
@@ -1619,15 +1807,19 @@
               <div class="footer-container3">
                 <style>
                   @media (prefers-reduced-motion: reduce) {
-                  .footer-social-icon, .footer-link, .footer-contact-link, .footer-cta-link, .footer-legal-link {
-                    transition: none;
-                  }
-                  .footer-social-icon:hover {
-                    transform: none;
-                  }
-                  .footer-cta-link:hover {
-                    transform: none;
-                  }
+                    .footer-social-icon,
+                    .footer-link,
+                    .footer-contact-link,
+                    .footer-cta-link,
+                    .footer-legal-link {
+                      transition: none;
+                    }
+                    .footer-social-icon:hover {
+                      transform: none;
+                    }
+                    .footer-cta-link:hover {
+                      transform: none;
+                    }
                   }
                 </style>
               </div>
@@ -1635,29 +1827,33 @@
             <div class="footer-container4">
               <div class="footer-container5">
                 <script defer="" data-name="footer-interactions">
-                  document.addEventListener('DOMContentLoaded', function() {
-                    (function(){
-                      const footerSocialIcons = document.querySelectorAll(".footer-social-icon")
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const footerSocialIcons = document.querySelectorAll(
+                        ".footer-social-icon"
+                      );
 
                       footerSocialIcons.forEach((icon) => {
                         icon.addEventListener("mouseenter", function () {
-                          this.style.transform = "translateY(-4px) rotate(5deg)"
-                        })
+                          this.style.transform =
+                            "translateY(-4px) rotate(5deg)";
+                        });
 
                         icon.addEventListener("mouseleave", function () {
-                          this.style.transform = "translateY(0) rotate(0deg)"
-                        })
-                      })
+                          this.style.transform = "translateY(0) rotate(0deg)";
+                        });
+                      });
 
-                      const footerLinks = document.querySelectorAll(".footer-link")
+                      const footerLinks =
+                        document.querySelectorAll(".footer-link");
                       footerLinks.forEach((link) => {
                         link.addEventListener("click", function (e) {
                           if (this.getAttribute("href") === "#") {
-                            e.preventDefault()
+                            e.preventDefault();
                           }
-                        })
-                      })
-                    })()
+                        });
+                      });
+                    })();
                   });
                 </script>
               </div>
@@ -1667,98 +1863,141 @@
         <div class="contact-register-container20">
           <div class="contact-register-container21">
             <style>
-                      @keyframes slideDown {from {opacity: 0;
-              transform: translateY(-8px);}
-              to {opacity: 1;
-              transform: translateY(0);}}
+              @keyframes slideDown {
+                from {
+                  opacity: 0;
+                  transform: translateY(-8px);
+                }
+                to {
+                  opacity: 1;
+                  transform: translateY(0);
+                }
+              }
             </style>
           </div>
         </div>
         <div class="contact-register-container22">
           <div class="contact-register-container23">
             <script defer="" data-name="feedback-form-dynamic">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
                   const disciplineImages = {
-                    guitar: "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    vocal: "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    piano: "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ukulele: "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    songwriting: "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ensemble: "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                  }
+                    guitar:
+                      "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    vocal:
+                      "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    piano:
+                      "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ukulele:
+                      "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    songwriting:
+                      "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ensemble:
+                      "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                  };
 
                   const teachersByDiscipline = {
                     guitar: [
-                      { value: "alexandr", name: "Александр", specialty: "Гитара" },
+                      {
+                        value: "alexandr",
+                        name: "Александр",
+                        specialty: "Гитара",
+                      },
                       { value: "boris", name: "Борис", specialty: "Гитара" },
                       { value: "kirill", name: "Кирилл", specialty: "Гитара" },
                     ],
                     vocal: [
-                      { value: "anastasia", name: "Анастасия", specialty: "Эстрадный вокал" },
-                      { value: "alexandra", name: "Александра", specialty: "Эстрадный вокал" },
-                      { value: "ivan", name: "Иван", specialty: "Эстрадный вокал" },
+                      {
+                        value: "anastasia",
+                        name: "Анастасия",
+                        specialty: "Эстрадный вокал",
+                      },
+                      {
+                        value: "alexandra",
+                        name: "Александра",
+                        specialty: "Эстрадный вокал",
+                      },
+                      {
+                        value: "ivan",
+                        name: "Иван",
+                        specialty: "Эстрадный вокал",
+                      },
                     ],
-                    ukulele: [{ value: "boris_ukulele", name: "Борис", specialty: "Укулеле" }],
+                    ukulele: [
+                      {
+                        value: "boris_ukulele",
+                        name: "Борис",
+                        specialty: "Укулеле",
+                      },
+                    ],
                     piano: [],
                     songwriting: [],
                     ensemble: [],
-                  }
+                  };
 
-                  const disciplineSelect = document.getElementById("discipline")
-                  const teacherSelect = document.getElementById("teacher")
-                  const teacherInfo = document.getElementById("teacherInfo")
-                  const disciplineImage = document.getElementById("disciplineImage")
+                  const disciplineSelect =
+                    document.getElementById("discipline");
+                  const teacherSelect = document.getElementById("teacher");
+                  const teacherInfo = document.getElementById("teacherInfo");
+                  const disciplineImage =
+                    document.getElementById("disciplineImage");
 
                   disciplineSelect.addEventListener("change", function () {
-                    const selectedDiscipline = this.value
+                    const selectedDiscipline = this.value;
 
-                    if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
-                      disciplineImage.style.opacity = "0"
+                    if (
+                      selectedDiscipline &&
+                      disciplineImages[selectedDiscipline]
+                    ) {
+                      disciplineImage.style.opacity = "0";
                       setTimeout(() => {
-                        disciplineImage.src = disciplineImages[selectedDiscipline]
-                        disciplineImage.style.opacity = "1"
-                      }, 200)
+                        disciplineImage.src =
+                          disciplineImages[selectedDiscipline];
+                        disciplineImage.style.opacity = "1";
+                      }, 200);
                     }
 
-                    teacherSelect.innerHTML = '<option value="">Выберите преподавателя</option>'
-                    teacherInfo.classList.remove("visible")
-                    teacherInfo.innerHTML = ""
+                    teacherSelect.innerHTML =
+                      '<option value="">Выберите преподавателя</option>';
+                    teacherInfo.classList.remove("visible");
+                    teacherInfo.innerHTML = "";
 
                     if (selectedDiscipline) {
-                      const teachers = teachersByDiscipline[selectedDiscipline]
+                      const teachers = teachersByDiscipline[selectedDiscipline];
 
                       if (teachers.length === 0) {
-                        teacherSelect.innerHTML = '<option value="">Скоро (преподавателей пока нет)</option>'
-                        teacherSelect.disabled = true
+                        teacherSelect.innerHTML =
+                          '<option value="">Скоро (преподавателей пока нет)</option>';
+                        teacherSelect.disabled = true;
                       } else {
-                        teacherSelect.disabled = false
+                        teacherSelect.disabled = false;
                         teachers.forEach((teacher) => {
-                          const option = document.createElement("option")
-                          option.value = teacher.value
-                          option.textContent = teacher.name
-                          option.dataset.specialty = teacher.specialty
-                          teacherSelect.appendChild(option)
-                        })
+                          const option = document.createElement("option");
+                          option.value = teacher.value;
+                          option.textContent = teacher.name;
+                          option.dataset.specialty = teacher.specialty;
+                          teacherSelect.appendChild(option);
+                        });
                       }
                     } else {
-                      teacherSelect.innerHTML = '<option value="">Сначала выберите дисциплину</option>'
-                      teacherSelect.disabled = false
+                      teacherSelect.innerHTML =
+                        '<option value="">Сначала выберите дисциплину</option>';
+                      teacherSelect.disabled = false;
                     }
-                  })
+                  });
 
                   teacherSelect.addEventListener("change", function () {
-                    const selectedOption = this.options[this.selectedIndex]
+                    const selectedOption = this.options[this.selectedIndex];
 
                     if (this.value && selectedOption.dataset.specialty) {
-                      teacherInfo.innerHTML = `<strong>${selectedOption.textContent}</strong><br>Специальность: ${selectedOption.dataset.specialty}`
-                      teacherInfo.classList.add("visible")
+                      teacherInfo.innerHTML = `<strong>${selectedOption.textContent}</strong><br>Специальность: ${selectedOption.dataset.specialty}`;
+                      teacherInfo.classList.add("visible");
                     } else {
-                      teacherInfo.classList.remove("visible")
-                      teacherInfo.innerHTML = ""
+                      teacherInfo.classList.remove("visible");
+                      teacherInfo.innerHTML = "";
                     }
-                  })
-                })()
+                  });
+                })();
               });
             </script>
           </div>
@@ -1766,68 +2005,90 @@
         <div class="contact-register-container24">
           <div class="contact-register-container25">
             <script defer="" data-name="feedback-form-interactive">
-              document.addEventListener('DOMContentLoaded', function() {
-                (function(){
+              document.addEventListener("DOMContentLoaded", function () {
+                (function () {
                   const disciplineImages = {
-                    guitar: "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    vocal: "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    piano: "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ukulele: "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    songwriting: "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ensemble: "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                  }
+                    guitar:
+                      "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    vocal:
+                      "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    piano:
+                      "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ukulele:
+                      "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    songwriting:
+                      "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ensemble:
+                      "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                  };
 
                   const teachersByDiscipline = {
                     guitar: ["Александр", "Борис", "Кирилл"],
-                    vocal: ["Анастасия", "Александра", "Иван (Эстрадный вокал)"],
+                    vocal: [
+                      "Анастасия",
+                      "Александра",
+                      "Иван (Эстрадный вокал)",
+                    ],
                     piano: ["Скоро появится"],
                     ukulele: ["Борис"],
                     songwriting: ["Скоро появится"],
                     ensemble: ["Скоро появится"],
-                  }
+                  };
 
-                  const disciplineSelect = document.getElementById("discipline")
-                  const teacherSelect = document.getElementById("teacher")
-                  const disciplineImage = document.getElementById("disciplineImage")
+                  const disciplineSelect =
+                    document.getElementById("discipline");
+                  const teacherSelect = document.getElementById("teacher");
+                  const disciplineImage =
+                    document.getElementById("disciplineImage");
 
                   disciplineSelect.addEventListener("change", function () {
-                    const selectedDiscipline = this.value
+                    const selectedDiscipline = this.value;
 
-                    if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
-                      disciplineImage.style.opacity = "0"
+                    if (
+                      selectedDiscipline &&
+                      disciplineImages[selectedDiscipline]
+                    ) {
+                      disciplineImage.style.opacity = "0";
 
                       setTimeout(() => {
-                        disciplineImage.src = disciplineImages[selectedDiscipline]
-                        disciplineImage.style.opacity = "1"
-                      }, 250)
+                        disciplineImage.src =
+                          disciplineImages[selectedDiscipline];
+                        disciplineImage.style.opacity = "1";
+                      }, 250);
                     }
 
-                    teacherSelect.innerHTML = '<option value="">Выберите...</option>'
+                    teacherSelect.innerHTML =
+                      '<option value="">Выберите...</option>';
 
-                    if (selectedDiscipline && teachersByDiscipline[selectedDiscipline]) {
-                      const teachers = teachersByDiscipline[selectedDiscipline]
+                    if (
+                      selectedDiscipline &&
+                      teachersByDiscipline[selectedDiscipline]
+                    ) {
+                      const teachers = teachersByDiscipline[selectedDiscipline];
                       teachers.forEach((teacher) => {
-                        const option = document.createElement("option")
-                        option.value = teacher.toLowerCase().replace(/\s+/g, "-")
-                        option.textContent = teacher
-                        teacherSelect.appendChild(option)
-                      })
-                      teacherSelect.disabled = false
+                        const option = document.createElement("option");
+                        option.value = teacher
+                          .toLowerCase()
+                          .replace(/\s+/g, "-");
+                        option.textContent = teacher;
+                        teacherSelect.appendChild(option);
+                      });
+                      teacherSelect.disabled = false;
                     } else {
-                      const option = document.createElement("option")
-                      option.value = ""
-                      option.textContent = "Сначала выберите дисциплину"
-                      teacherSelect.appendChild(option)
-                      teacherSelect.disabled = true
+                      const option = document.createElement("option");
+                      option.value = "";
+                      option.textContent = "Сначала выберите дисциплину";
+                      teacherSelect.appendChild(option);
+                      teacherSelect.disabled = true;
                     }
-                  })
-                })()
+                  });
+                })();
               });
             </script>
           </div>
         </div>
       </div>
-      <link rel="canonical" href="https://www.mikealina.ru/contact-register" />
+      <link rel="canonical" href="https://www.zvschool.ru/contact-register" />
     </div>
   </body>
 </html>
