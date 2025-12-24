@@ -1,74 +1,1833 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
+    <title>Contact-Register - Sound Around</title>
+    <meta property="og:title" content="Contact-Register - Sound Around" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Контакты — Звук Вокруг</title>
+    <meta property="twitter:card" content="summary_large_image" />
 
-    <meta name="description" content="Контакты студии вокала и музыки «Звук Вокруг». Адреса студий в Москве, как добраться, маршруты." />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Roboto Slab";
+        font-size: 1rem;
+      }
 
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./contact-register.css" />
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.01em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
   </head>
-
   <body>
-    <!-- Navigation подключается через общий layout -->
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./contact-register.css" rel="stylesheet" />
 
-    <section id="locations-section" class="locations-section">
-      <div class="locations-container">
-        <div class="locations-header">
-          <h1 class="locations-title section-title">Где нас найти</h1>
-          <p class="locations-description section-content">
-            Мы работаем в двух студиях в Москве. Выбирайте ближайшую к вам локацию и приходите на пробный урок!
-          </p>
+      <div class="contact-register-container10">
+        <navigation-wrapper class="navigation-wrapper">
+          <!--Navigation component-->
+          <div class="navigation-container1">
+            <div class="navigation-container2">
+              <div class="navigation-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .navigation-logo, .navigation-link, .navigation-social-link, .navigation-toggle, .navigation-mobile-close, .navigation-mobile-link, .navigation-mobile-social-link {
+                    transition: none;
+                  }
+                  .navigation-mobile-overlay {
+                    transition: none;
+                  }
+                  .navigation-mobile-link {
+                    animation: none;
+                    opacity: 1;
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <nav class="navigation">
+              <div class="navigation-container">
+                <a href="index.html">
+                  <div aria-label="Return to homepage" class="nav-logo-link">
+                    <img
+                      alt="Company Logo"
+                      src="public/допы/44-300w.png"
+                      class="navigation-thq-nav-logo-image-elm nav-logo-image"
+                    />
+                  </div>
+                </a>
+                <div class="navigation-desktop">
+                  <ul class="navigation-links">
+                    <li>
+                      <a href="index.html">
+                        <div
+                          class="navigation-thq-navigation-link-elm1 navigation-link"
+                        >
+                          <span>Главная</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="page.html">
+                        <div
+                          class="navigation-thq-navigation-link-elm2 navigation-link"
+                        >
+                          <span>О нас</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="disciplines-pricing.html">
+                        <div
+                          class="navigation-thq-navigation-link-elm3 navigation-link"
+                        >
+                          <span>Дисциплины</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="contact-register.html">
+                        <div
+                          class="navigation-thq-navigation-link-elm4 navigation-link"
+                        >
+                          <span>Контакты</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-socials">
+                    <a
+                      href="https://www.instagram.com/sa_musstudio/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <div
+                        aria-label="Instagram"
+                        class="navigation-thq-navigation-social-link-elm1 navigation-social-link"
+                      >
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <rect
+                              x="2"
+                              y="2"
+                              rx="5"
+                              ry="5"
+                              width="20"
+                              height="20"
+                            ></rect>
+                            <path
+                              d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="https://t.me/soundaround_club">
+                      <div
+                        aria-label="Telegram"
+                        class="navigation-thq-navigation-social-link-elm2 navigation-social-link"
+                      >
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="m15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div aria-label="WhatsApp" class="navigation-social-link">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
+                            <path
+                              d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
+                            ></path>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                    <a href="https://vk.com/studiozv">
+                      <div
+                        aria-label="Вконтакте"
+                        class="navigation-thq-navigation-social-link-elm4 navigation-social-link"
+                      >
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M14 19h-4a8 8 0 0 1-8-8V6h4v5a4 4 0 0 0 4 4h0V6h4v4.5h.03A4.53 4.53 0 0 0 18 6.004h4l-.342 1.711A6.86 6.86 0 0 1 18 12.504h0a5.34 5.34 0 0 1 3.566 4.111L22 19.004h0h-4a4.53 4.53 0 0 0-3.97-4.496v4.5z"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <button
+                  id="navToggle"
+                  aria-label="Открыть меню"
+                  aria-expanded="false"
+                  class="navigation-toggle"
+                >
+                  <svg
+                    width="28"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="28"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M4 6h16M4 12h16M4 18h16"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div id="navOverlay" class="navigation-mobile-overlay">
+                <div class="navigation-mobile-header">
+                  <a href="#">
+                    <div aria-label="Главная" class="navigation-mobile-logo">
+                      <span class="section-title">Студия ХоМузыка</span>
+                    </div>
+                  </a>
+                  <button
+                    id="navClose"
+                    aria-label="Закрыть меню"
+                    class="navigation-mobile-close"
+                  >
+                    <svg
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M18 6L6 18M6 6l12 12"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <nav class="navigation-mobile-content">
+                  <ul class="navigation-mobile-links">
+                    <li>
+                      <a href="index.html">
+                        <div
+                          class="navigation-thq-navigation-mobile-link-elm1 navigation-mobile-link"
+                        >
+                          <span>Главная</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="page.html">
+                        <div
+                          class="navigation-thq-navigation-mobile-link-elm2 navigation-mobile-link"
+                        >
+                          <span>О нас</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="disciplines-pricing.html">
+                        <div
+                          class="navigation-thq-navigation-mobile-link-elm3 navigation-mobile-link"
+                        >
+                          <span>Дисциплины</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="contact-register.html">
+                        <div
+                          class="navigation-thq-navigation-mobile-link-elm4 navigation-mobile-link"
+                        >
+                          <span>Контакты</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="navigation-mobile-socials">
+                    <span class="navigation-mobile-socials-title">
+                      Мы в соцсетях
+                    </span>
+                    <div class="navigation-mobile-socials-grid">
+                      <a href="#">
+                        <div
+                          aria-label="Instagram"
+                          class="navigation-mobile-social-link"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <rect
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                                width="20"
+                                height="20"
+                              ></rect>
+                              <path
+                                d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>Instagram</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div
+                          aria-label="Telegram"
+                          class="navigation-mobile-social-link"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="m15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Telegram</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div
+                          aria-label="WhatsApp"
+                          class="navigation-mobile-social-link"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"
+                              ></path>
+                              <path
+                                d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
+                              ></path>
+                            </g>
+                          </svg>
+                          <span>WhatsApp</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div
+                          aria-label="Вконтакте"
+                          class="navigation-mobile-social-link"
+                        >
+                          <svg
+                            width="24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M14 19h-4a8 8 0 0 1-8-8V6h4v5a4 4 0 0 0 4 4h0V6h4v4.5h.03A4.53 4.53 0 0 0 18 6.004h4l-.342 1.711A6.86 6.86 0 0 1 18 12.504h0a5.34 5.34 0 0 1 3.566 4.111L22 19.004h0h-4a4.53 4.53 0 0 0-3.97-4.496v4.5z"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                          <span>Вконтакте</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </nav>
+            <div class="navigation-container4">
+              <div class="navigation-container5">
+                <style>
+                          @keyframes gradientShift {0%,100% {background-position: 0% 50%;}
+                  50% {background-position: 100% 50%;}}@keyframes slideInLeft {to {opacity: 1;
+                  transform: translateX(0);}}
+                </style>
+              </div>
+            </div>
+            <div class="navigation-container6">
+              <div class="navigation-container7">
+                <script defer="" data-name="navigation-mobile-menu">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const navToggle = document.getElementById("navToggle")
+                      const navClose = document.getElementById("navClose")
+                      const navOverlay = document.getElementById("navOverlay")
+                      const navLinks = document.querySelectorAll(".navigation-mobile-link")
+
+                      function openMenu() {
+                        navOverlay.classList.add("navigation-mobile-open")
+                        navToggle.setAttribute("aria-expanded", "true")
+                        document.body.style.overflow = "hidden"
+                      }
+
+                      function closeMenu() {
+                        navOverlay.classList.remove("navigation-mobile-open")
+                        navToggle.setAttribute("aria-expanded", "false")
+                        document.body.style.overflow = ""
+                      }
+
+                      navToggle.addEventListener("click", openMenu)
+                      navClose.addEventListener("click", closeMenu)
+
+                      navLinks.forEach((link) => {
+                        link.addEventListener("click", closeMenu)
+                      })
+
+                      navOverlay.addEventListener("click", (e) => {
+                        if (e.target === navOverlay) {
+                          closeMenu()
+                        }
+                      })
+
+                      document.addEventListener("keydown", (e) => {
+                        if (e.key === "Escape" && navOverlay.classList.contains("navigation-mobile-open")) {
+                          closeMenu()
+                        }
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </navigation-wrapper>
+        <section
+          class="contact---register-thq-hero-contact-elm contact---register-contact---register-hero-contact"
+        >
+          <div class="hero-contact__bg-layer hero-contact__bg-image"></div>
+          <div class="hero-contact__bg-gradient hero-contact__bg-layer"></div>
+          <div class="hero-contact__bg-layer hero-contact__bg-shapes"></div>
+          <div
+            class="contact---register-hero-contact__content hero-contact__content"
+          >
+            <div
+              class="hero-contact__card contact---register-hero-contact__card"
+            >
+              <h1
+                class="contact---register-hero-contact__title hero-title hero-contact__title"
+              >
+                Наша Связь
+              </h1>
+              <p
+                class="contact---register-hero-contact__subtitle hero-contact__subtitle"
+              >
+                Откройте для себя свой голос, инструмент или сценическое
+                мастерство в уютной музыкальной школе-студии
+              </p>
+              <div
+                class="hero-contact__cta-group contact---register-hero-contact__cta-group"
+              >
+                <a
+                  href="https://api.whatsapp.com/send/?phone=79162353381&amp;text=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8%D0%B7+%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81+%D0%9A%D0%B0%D1%80%D1%82%0A%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B7%D0%B0%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BE%D0%B2%D0%B0%D0%BB%D0%BE+%D0%B2%D0%B0%D1%88%D0%B5+%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5&amp;type=phone_number&amp;app_absent=0"
+                  class="contact-register-thq-btn-elm1 btn btn-primary btn-lg contact---register-btn-lg"
+                >
+                  Запишись на пробный урок
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact---register-quick-contact">
+          <div class="contact---register-quick-contact__container">
+            <div class="contact---register-quick-contact__card">
+              <div class="contact---register-quick-contact__icon-wrapper">
+                <svg
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="quick-contact__icon"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="contact---register-quick-contact__label">Телефон</h3>
+              <p
+                id="phoneValue"
+                class="contact---register-quick-contact__value"
+              >
+                <span>+7 (916) 235-33-82</span>
+              </p>
+            </div>
+            <div class="contact---register-quick-contact__card">
+              <div class="contact---register-quick-contact__icon-wrapper">
+                <svg
+                  width="32"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  class="quick-contact__icon"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                    <rect x="2" y="4" rx="2" width="20" height="16"></rect>
+                  </g>
+                </svg>
+              </div>
+              <h3 class="contact---register-quick-contact__label">Email</h3>
+              <p
+                id="emailValue"
+                class="contact---register-quick-contact__value"
+              >
+                <span>soundaround.club@yandex.ru</span>
+              </p>
+            </div>
+          </div>
+          <section
+            class="contact---register-feedback-form-section4 feedback-form-section"
+          >
+            <div
+              class="contact---register-feedback-form-container4 feedback-form-container"
+            >
+              <div
+                class="contact---register-feedback-form-image-wrapper4 feedback-form-image-wrapper"
+              >
+                <img
+                  id="disciplineImage"
+                  alt="Музыкальная школа"
+                  src="https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  class="feedback-form-image"
+                />
+                <div class="feedback-form-image-overlay">
+                  <div class="feedback-form-icon-wrapper">
+                    <svg
+                      width="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="48"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle r="3" cx="6" cy="18"></circle>
+                        <circle r="3" cx="18" cy="16"></circle>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="contact---register-feedback-form-content4 feedback-form-content"
+              >
+                <div
+                  class="contact---register-feedback-form-header4 feedback-form-header"
+                >
+                  <h2 class="section-title">
+                    <span>Запишитесь на занятие</span>
+                  </h2>
+                  <p
+                    class="contact---register-feedback-form-description4 feedback-form-description"
+                  >
+                    Заполните форму, и мы свяжемся с вами для подтверждения
+                    записи
+                  </p>
+                </div>
+                <form
+                  action="/submit"
+                  method="POST"
+                  data-form-id="4b6e7819-f331-4c3f-88e3-36222ac7d3a8"
+                  class="contact---register-feedback-form4 feedback-form"
+                >
+                  <div
+                    class="contact---register-feedback-form-field feedback-form-field"
+                  >
+                    <label
+                      for="discipline"
+                      class="contact---register-feedback-form-label4 feedback-form-label"
+                    >
+                      Выберите дисциплину
+                    </label>
+                    <div class="feedback-form-select-wrapper">
+                      <select
+                        id="discipline"
+                        name="discipline"
+                        required="true"
+                        data-form-field-id="discipline"
+                        class="contact---register-feedback-form-select4 feedback-form-select"
+                      >
+                        <option value="true">Выберите...</option>
+                        <option value="guitar">Гитара</option>
+                        <option value="vocal">Вокал</option>
+                        <option value="piano">Фортепиано</option>
+                        <option value="ukulele">Укулеле</option>
+                        <option value="songwriting">Написание песен</option>
+                        <option value="ensemble">Ансамбль</option>
+                      </select>
+                      <svg
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        class="feedback-form-select-icon"
+                      >
+                        <path
+                          d="m6 9l6 6l6-6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="contact---register-feedback-form-field feedback-form-field"
+                  >
+                    <label
+                      for="level"
+                      class="contact---register-feedback-form-label4 feedback-form-label"
+                    >
+                      Уровень мастерства
+                    </label>
+                    <div class="feedback-form-select-wrapper">
+                      <select
+                        id="level"
+                        name="level"
+                        required="true"
+                        data-form-field-id="level"
+                        class="contact---register-feedback-form-select4 feedback-form-select"
+                      >
+                        <option value="true">Выберите...</option>
+                        <option value="beginner">Начинающий</option>
+                        <option value="intermediate">Средний</option>
+                        <option value="advanced">Продвинутый</option>
+                      </select>
+                      <svg
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        class="feedback-form-select-icon"
+                      >
+                        <path
+                          d="m6 9l6 6l6-6"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="contact---register-feedback-form-field feedback-form-field"
+                  >
+                    <label
+                      for="comments"
+                      class="contact---register-feedback-form-label4 feedback-form-label"
+                    >
+                      Комментарии
+                    </label>
+                    <textarea
+                      id="comments"
+                      name="comments"
+                      rows="4"
+                      placeholder="Что вы хотите добавить?"
+                      data-form-field-id="comments"
+                      class="contact---register-feedback-form-textarea4 feedback-form-textarea"
+                    ></textarea>
+                  </div>
+                  <button
+                    id="thq_button_oOef"
+                    name="button"
+                    type="submit"
+                    data-form-field-id="thq_button_oOef"
+                    class="contact---register-btn-lg1 btn btn-primary btn-lg feedback-form-submit"
+                  >
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="contact-register-container11">
+          <div class="contact-register-container12">
+            <script defer="" data-name="feedback-form-dynamic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  ;(function () {
+                    const disciplineImages = {
+                      guitar: "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      vocal: "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      piano: "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ukulele: "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      songwriting: "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ensemble: "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    }
+
+                    const disciplineSelect = document.getElementById("discipline")
+                    const disciplineImage = document.getElementById("disciplineImage")
+
+                    disciplineSelect.addEventListener("change", function () {
+                      const selectedDiscipline = this.value
+                      if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
+                        disciplineImage.style.opacity = "0"
+                        setTimeout(() => {
+                          disciplineImage.src = disciplineImages[selectedDiscipline]
+                          disciplineImage.style.opacity = "1"
+                        }, 200)
+                      }
+                    })
+                  })()
+                })()
+              });
+            </script>
+          </div>
         </div>
+        <section id="map-section" class="map-resource">
+          <div class="map-resource__container">
+            <section id="locations-section" class="locations-section">
+              <div class="locations-container">
+                <div class="locations-header">
+                  <h2 class="section-title locations-title">Где нас найти</h2>
+                  <p class="locations-description section-content">
+                    Мы работаем в двух студиях в Москве. Выбирайте ближайшую к
+                    вам локацию и приходите на пробный урок!
+                  </p>
+                </div>
+                <div class="locations-grid">
+                  <article class="location-card">
+                    <div class="location-card-decorative-shape"></div>
+                    <div class="location-card-header">
+                      <div class="location-card-icon-wrapper">
+                        <svg
+                          width="28"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="28"
+                          viewBox="0 0 24 24"
+                          class="location-card-icon"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                            ></path>
+                            <circle r="3" cx="12" cy="10"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                      <h3 class="location-card-title">Отделение 1</h3>
+                    </div>
+                    <div class="location-card-content">
+                      <div class="location-card-address">
+                        <p class="location-card-address-text">
+                          улица Мнёвники, 7к1
+                        </p>
+                        <p class="location-card-city">Москва, 123308</p>
+                      </div>
+                      <div class="contact---register-location-card-metro">
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          class="location-card-metro-icon"
+                        >
+                          <path
+                            d="m14.153 8.188l-.72-3.236a2.493 2.493 0 0 0-4.867 0L5.541 18.566A2 2 0 0 0 7.493 21h7.014a2 2 0 0 0 1.952-2.434l-.524-2.357M11 18l9-13m-1 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <p class="contact---register-location-card-metro-text">
+                          метро Народного Ополчения
+                        </p>
+                      </div>
+                    </div>
+                    <a
+                      href="https://yandex.ru/maps/?rtext=~55.779459,37.472983"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <div rel="noreferrer noopener" target="_blank">
+                        <div
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          class="btn btn-primary location-card-button"
+                        >
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            class="location-card-button-icon"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <circle r="3" cx="6" cy="19"></circle>
+                              <path
+                                d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"
+                              ></path>
+                              <circle r="3" cx="18" cy="5"></circle>
+                            </g>
+                          </svg>
+                          <span>Открыть маршрут</span>
+                        </div>
+                      </div>
+                    </a>
+                  </article>
+                  <article class="location-card">
+                    <div class="location-card-decorative-shape"></div>
+                    <div class="location-card-header">
+                      <div class="location-card-icon-wrapper">
+                        <svg
+                          width="28"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="28"
+                          viewBox="0 0 24 24"
+                          class="location-card-icon"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path
+                              d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                            ></path>
+                            <circle r="3" cx="12" cy="10"></circle>
+                          </g>
+                        </svg>
+                      </div>
+                      <h3 class="location-card-title">Отделение 2</h3>
+                    </div>
+                    <div class="location-card-content">
+                      <div class="location-card-address">
+                        <p class="location-card-address-text">
+                          Самокатная 4ас1
+                        </p>
+                        <p class="location-card-city">Москва</p>
+                      </div>
+                      <div class="location-card-metro">
+                        <svg
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          class="location-card-metro-icon"
+                        >
+                          <path
+                            d="m14.153 8.188l-.72-3.236a2.493 2.493 0 0 0-4.867 0L5.541 18.566A2 2 0 0 0 7.493 21h7.014a2 2 0 0 0 1.952-2.434l-.524-2.357M11 18l9-13m-1 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <span class="location-card-metro-text">
+                          метро Бумажная
+                        </span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://yandex.ru/maps/?rtext=~55.680865,37.665031"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <div
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        class="btn btn-primary location-card-button"
+                      >
+                        <svg
+                          width="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          class="location-card-button-icon"
+                        >
+                          <g
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <circle r="3" cx="6" cy="19"></circle>
+                            <path
+                              d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"
+                            ></path>
+                            <circle r="3" cx="18" cy="5"></circle>
+                          </g>
+                        </svg>
+                        <span>Открыть маршрут</span>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="contact-register-container14">
+            <div class="contact-register-container15">
+              <script defer="" data-name="feedback-form-interactive">
+                document.addEventListener('DOMContentLoaded', function() {
+                  (function(){
+                    const disciplineImages = {
+                      guitar: "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      vocal: "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      piano: "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ukulele: "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      songwriting: "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      ensemble: "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    }
 
-        <div class="locations-grid">
-          <article class="location-card">
-            <div class="location-card-decorative-shape"></div>
-            <div class="location-card-header">
-              <div class="location-card-icon-wrapper"></div>
-              <h2 class="location-card-title">Отделение 1</h2>
-            </div>
-            <div class="location-card-content">
-              <p class="location-card-address-text">улица Мнёвники, 7к1</p>
-              <p class="location-card-city">Москва, 123308</p>
-              <p class="location-card-metro-text">метро Народного Ополчения</p>
-            </div>
-            <a
-              href="https://yandex.ru/maps/?rtext=~55.779459,37.472983"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="location-card-button btn btn-primary"
-            >
-              Открыть маршрут
-            </a>
-          </article>
+                    const teachersByDiscipline = {
+                      guitar: ["Александр", "Борис", "Кирилл"],
+                      vocal: ["Анастасия", "Александра", "Иван (Эстрадный вокал)"],
+                      piano: ["Скоро появится"],
+                      ukulele: ["Борис"],
+                      songwriting: ["Скоро появится"],
+                      ensemble: ["Скоро появится"],
+                    }
 
-          <article class="location-card">
-            <div class="location-card-decorative-shape"></div>
-            <div class="location-card-header">
-              <div class="location-card-icon-wrapper"></div>
-              <h2 class="location-card-title">Отделение 2</h2>
+                    const disciplineSelect = document.getElementById("discipline")
+                    const teacherSelect = document.getElementById("teacher")
+                    const disciplineImage = document.getElementById("disciplineImage")
+
+                    disciplineSelect.addEventListener("change", function () {
+                      const selectedDiscipline = this.value
+
+                      if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
+                        disciplineImage.style.opacity = "0"
+
+                        setTimeout(() => {
+                          disciplineImage.src = disciplineImages[selectedDiscipline]
+                          disciplineImage.style.opacity = "1"
+                        }, 250)
+                      }
+
+                      teacherSelect.innerHTML = '<option value="">Выберите...</option>'
+
+                      if (selectedDiscipline && teachersByDiscipline[selectedDiscipline]) {
+                        const teachers = teachersByDiscipline[selectedDiscipline]
+                        teachers.forEach((teacher) => {
+                          const option = document.createElement("option")
+                          option.value = teacher.toLowerCase().replace(/\s+/g, "-")
+                          option.textContent = teacher
+                          teacherSelect.appendChild(option)
+                        })
+                        teacherSelect.disabled = false
+                      } else {
+                        const option = document.createElement("option")
+                        option.value = ""
+                        option.textContent = "Сначала выберите дисциплину"
+                        teacherSelect.appendChild(option)
+                        teacherSelect.disabled = true
+                      }
+                    })
+                  })()
+                });
+              </script>
             </div>
-            <div class="location-card-content">
-              <p class="location-card-address-text">Самокатная 4ас1</p>
-              <p class="location-card-city">Москва</p>
-              <p class="location-card-metro-text">метро Бумажная</p>
+          </div>
+        </section>
+        <section class="social-cta">
+          <div class="social-cta__wrapper">
+            <div class="social-cta__background">
+              <div class="social-cta__gradient"></div>
             </div>
-            <a
-              href="https://yandex.ru/maps/?rtext=~55.680865,37.665031"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="location-card-button btn btn-primary"
-            >
-              Открыть маршрут
-            </a>
-          </article>
+            <div class="social-cta__content">
+              <h2 class="social-cta__title section-title">
+                Присоединяйтесь к нашему сообществу
+              </h2>
+              <p class="social-cta__subtitle">
+                Следите за новостями, анонсами событий и творческими
+                достижениями наших учеников в социальных сетях
+              </p>
+              <div class="social-cta__links">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="social-cta__link--instagram social-cta__link"
+                  >
+                    <svg
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                          width="20"
+                          height="20"
+                        ></rect>
+                        <path
+                          d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span class="social-cta__link-label">Instagram</span>
+                  </div>
+                </a>
+                <a
+                  href="https://t.me"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="social-cta__link social-cta__link--telegram"
+                  >
+                    <svg
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <span class="social-cta__link-label">Telegram</span>
+                  </div>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=79162353381&amp;text=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8%D0%B7+%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81+%D0%9A%D0%B0%D1%80%D1%82%0A%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21+%D0%9C%D0%B5%D0%BD%D1%8F+%D0%B7%D0%B0%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BE%D0%B2%D0%B0%D0%BB%D0%BE+%D0%B2%D0%B0%D1%88%D0%B5+%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5&amp;type=phone_number&amp;app_absent=0"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="social-cta__link--whatsapp social-cta__link"
+                  >
+                    <svg
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <g
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"></path>
+                        <path
+                          d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
+                        ></path>
+                      </g>
+                    </svg>
+                    <span class="social-cta__link-label">WhatsApp</span>
+                  </div>
+                </a>
+                <a
+                  href="https://vk.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="social-cta__link--vk social-cta__link"
+                  >
+                    <svg
+                      width="32"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2m2.99 13.35h-1.44c-.45 0-.58-.36-1.38-1.16c-.69-.69-.99-.78-1.17-.78c-.23 0-.31.08-.31.47v1.05c0 .28-.09.45-1.35.45c-1.99 0-4.19-1.21-5.74-3.46C4.84 9.42 4.37 7.4 4.37 7.06c0-.17.08-.34.47-.34h1.45c.36 0 .49.16.63.53c.68 1.99 1.83 3.73 2.3 3.73c.18 0 .26-.08.26-.52V8.93c-.06-.95-.56-1.04-.56-1.39c0-.14.11-.28.3-.28h2.27c.3 0 .41.15.41.5v2.95c0 .3.14.41.22.41c.18 0 .32-.11.65-.44c1-1.12 1.72-2.86 1.72-2.86c.09-.2.26-.37.62-.37h1.44c.43 0 .53.22.43.52c-.18.82-1.91 3.41-1.91 3.41c-.14.25-.2.36 0 .64c.14.21.6.59 1.35 1.55c.54.78.94 1.35 1.05 1.77c.1.42-.09.63-.51.63"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                    <span class="social-cta__link-label">Вконтакте</span>
+                  </div>
+                </a>
+              </div>
+              <div class="social-cta__badges">
+                <div class="social-cta__badge">
+                  <strong>1200+</strong>
+                  <span>Подписчиков</span>
+                </div>
+                <div class="social-cta__badge">
+                  <strong>100+</strong>
+                  <span>Публикаций</span>
+                </div>
+                <div class="social-cta__badge">
+                  <strong>20+</strong>
+                  <span>Событий в год</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="contact-register-thq-video-gallery-elm video-gallery"
+        ></section>
+        <div class="contact-register-container16">
+          <div class="contact-register-container17">
+            <style>
+                      @keyframes fadeIn {from {opacity: 0;
+              transform: translateY(10px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="contact-register-container18">
+          <div class="contact-register-container19">
+            <script defer="" data-name="contact-interactions">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const copyPhone = document.getElementById("copyPhone")
+                  const copyEmail = document.getElementById("copyEmail")
+                  const copyAddress = document.getElementById("copyAddress")
+                  const phoneValue = document.getElementById("phoneValue")
+                  const emailValue = document.getElementById("emailValue")
+
+                  function copyToClipboard(text, button) {
+                    navigator.clipboard.writeText(text).then(() => {
+                      const originalHTML = button.innerHTML
+                      button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"/></svg><span>Скопировано!</span>'
+                      button.style.background = "#2ecc71"
+
+                      setTimeout(() => {
+                        button.innerHTML = originalHTML
+                        button.style.background = ""
+                      }, 2000)
+                    })
+                  }
+
+                  copyPhone.addEventListener("click", () => {
+                    copyToClipboard(phoneValue.textContent, copyPhone)
+                  })
+
+                  copyEmail.addEventListener("click", () => {
+                    copyToClipboard(emailValue.textContent, copyEmail)
+                  })
+
+                  copyAddress.addEventListener("click", () => {
+                    copyToClipboard("Хорошёво-Мнёвники, Москва", copyAddress)
+                  })
+
+                  const tabs = document.querySelectorAll(".disciplines-tabs__tab")
+                  const panels = document.querySelectorAll(".disciplines-tabs__panel")
+
+                  tabs.forEach((tab) => {
+                    tab.addEventListener("click", () => {
+                      const targetPanel = tab.getAttribute("data-tab")
+
+                      tabs.forEach((t) => t.classList.remove("disciplines-tabs__tab--active"))
+                      panels.forEach((p) => p.classList.remove("disciplines-tabs__panel--active"))
+
+                      tab.classList.add("disciplines-tabs__tab--active")
+                      document.querySelector(`[data-panel="${targetPanel}"]`).classList.add("disciplines-tabs__panel--active")
+                    })
+                  })
+
+                  const videoItems = document.querySelectorAll(".video-gallery__item--video")
+                  videoItems.forEach((item) => {
+                    const video = item.querySelector("video")
+                    if (video) {
+                      video.addEventListener("play", () => {
+                        item.querySelector(".video-gallery__play-overlay").style.display = "none"
+                      })
+                      video.addEventListener("pause", () => {
+                        item.querySelector(".video-gallery__play-overlay").style.display = "flex"
+                      })
+                    }
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <footer-wrapper class="footer-wrapper">
+          <!--Footer component-->
+          <div class="footer-container1">
+            <footer class="footer-main">
+              <div class="footer-decorative-layer"></div>
+              <div class="footer-content-wrapper">
+                <div class="footer-grid">
+                  <div class="footer-column footer-brand-column">
+                    <img
+                      src="public/допы/44-200h.png"
+                      alt="Звук Вокруг"
+                      class="footer-brand-image"
+                    />
+                    <p class="footer-brand-tagline">
+                      Уютная музыкальная школа-студия в районе
+                      "Хорошёво-Мнёвники"
+                    </p>
+                    <div class="footer-social-group">
+                      <span class="footer-social-label">
+                        Присоединяйтесь к нам:
+                      </span>
+                      <div class="footer-social-links">
+                        <a
+                          href="https://www.instagram.com/sa_musstudio/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                        >
+                          <div
+                            aria-label="Instagram"
+                            class="footer-thq-footer-social-icon-elm1 footer-social-icon"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <rect
+                                  x="2"
+                                  y="2"
+                                  rx="5"
+                                  ry="5"
+                                  width="20"
+                                  height="20"
+                                ></rect>
+                                <path
+                                  d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a
+                          href="https://www.instagram.com/sa_musstudio/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+                        >
+                          <div
+                            aria-label="Telegram"
+                            class="footer-thq-footer-social-icon-elm2 footer-social-icon"
+                          >
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="#">
+                          <div aria-label="WhatsApp" class="footer-social-icon">
+                            <svg
+                              width="24"
+                              xmlns="http://www.w3.org/2000/svg"
+                              height="24"
+                              viewBox="0 0 24 24"
+                            >
+                              <g
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <path
+                                  d="m3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"
+                                ></path>
+                                <path
+                                  d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0za5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
+                                ></path>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                        <a href="https://vk.com/studiozv">
+                          <div
+                            aria-label="Вконтакте"
+                            class="footer-thq-footer-social-icon-elm4 footer-social-icon"
+                          >
+                            <span class="footer-vk-icon">ВК</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-navigation-column footer-column">
+                    <h3 class="footer-column-title">Навигация</h3>
+                    <nav class="footer-nav-links">
+                      <a href="index.html">
+                        <div class="footer-thq-footer-link-elm1 footer-link">
+                          <span>Главаная</span>
+                        </div>
+                      </a>
+                      <a href="page.html">
+                        <div class="footer-thq-footer-link-elm2 footer-link">
+                          <span>О нас</span>
+                        </div>
+                      </a>
+                      <a href="disciplines-pricing.html">
+                        <div class="footer-thq-footer-link-elm3 footer-link">
+                          <span>Дисциплины</span>
+                        </div>
+                      </a>
+                      <a href="contact-register.html">
+                        <div class="footer-thq-footer-link-elm4 footer-link">
+                          <span>Контакты</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="footer-link">
+                          <span>Предстоящие события</span>
+                        </div>
+                      </a>
+                    </nav>
+                  </div>
+                  <div class="footer-column footer-contact-column">
+                    <h3 class="footer-column-title">Контакты</h3>
+                    <div class="footer-contact-info">
+                      <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233a14 14 0 0 0 6.392 6.384"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            ></path>
+                          </svg>
+                        </div>
+                        <a href="tel:+79162353381">
+                          <div class="footer-contact-link">
+                            <span>+7 (916) 235-33-81</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="m22 7l-8.991 5.727a2 2 0 0 1-2.009 0L2 7"
+                              ></path>
+                              <rect
+                                x="2"
+                                y="4"
+                                rx="2"
+                                width="20"
+                                height="16"
+                              ></rect>
+                            </g>
+                          </svg>
+                        </div>
+                        <a href="mailto:info@homusic.ru?subject=">
+                          <div class="footer-contact-link">
+                            <span>soundaround.club@yandex.ru</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                              ></path>
+                              <circle r="3" cx="12" cy="10"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="footer-address">
+                          улица Мнёвники дом 7 корпус 1
+                        </span>
+                      </div>
+                      <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                          <svg
+                            width="20"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20"
+                            viewBox="0 0 24 24"
+                          >
+                            <g
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                              ></path>
+                              <circle r="3" cx="12" cy="10"></circle>
+                            </g>
+                          </svg>
+                        </div>
+                        <span class="footer-address">
+                          улица Мнёвники дом 7 корпус 1
+                        </span>
+                      </div>
+                      <a
+                        href="https://yandex.ru/maps/-/CLsyNG23"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <div
+                          class="footer-thq-footer-cta-link-elm footer-cta-link"
+                        ></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <div class="footer-legal">
+                    <p class="footer-copyright">
+                      © 2025 Студия Звук Вокруг. Все права защищены.
+                    </p>
+                    <div class="footer-legal-links">
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Политика конфиденциальности</span>
+                        </div>
+                      </a>
+                      <span class="footer-legal-divider">•</span>
+                      <a href="#">
+                        <div class="footer-legal-link">
+                          <span>Условия использования</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-tagline-bottom">
+                    <p>Создано с любовью к музыке и творчеству</p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <style>
+                  @media (prefers-reduced-motion: reduce) {
+                  .footer-social-icon, .footer-link, .footer-contact-link, .footer-cta-link, .footer-legal-link {
+                    transition: none;
+                  }
+                  .footer-social-icon:hover {
+                    transform: none;
+                  }
+                  .footer-cta-link:hover {
+                    transform: none;
+                  }
+                  }
+                </style>
+              </div>
+            </div>
+            <div class="footer-container4">
+              <div class="footer-container5">
+                <script defer="" data-name="footer-interactions">
+                  document.addEventListener('DOMContentLoaded', function() {
+                    (function(){
+                      const footerSocialIcons = document.querySelectorAll(".footer-social-icon")
+
+                      footerSocialIcons.forEach((icon) => {
+                        icon.addEventListener("mouseenter", function () {
+                          this.style.transform = "translateY(-4px) rotate(5deg)"
+                        })
+
+                        icon.addEventListener("mouseleave", function () {
+                          this.style.transform = "translateY(0) rotate(0deg)"
+                        })
+                      })
+
+                      const footerLinks = document.querySelectorAll(".footer-link")
+                      footerLinks.forEach((link) => {
+                        link.addEventListener("click", function (e) {
+                          if (this.getAttribute("href") === "#") {
+                            e.preventDefault()
+                          }
+                        })
+                      })
+                    })()
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+        </footer-wrapper>
+        <div class="contact-register-container20">
+          <div class="contact-register-container21">
+            <style>
+                      @keyframes slideDown {from {opacity: 0;
+              transform: translateY(-8px);}
+              to {opacity: 1;
+              transform: translateY(0);}}
+            </style>
+          </div>
+        </div>
+        <div class="contact-register-container22">
+          <div class="contact-register-container23">
+            <script defer="" data-name="feedback-form-dynamic">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const disciplineImages = {
+                    guitar: "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    vocal: "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    piano: "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ukulele: "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    songwriting: "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ensemble: "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                  }
+
+                  const teachersByDiscipline = {
+                    guitar: [
+                      { value: "alexandr", name: "Александр", specialty: "Гитара" },
+                      { value: "boris", name: "Борис", specialty: "Гитара" },
+                      { value: "kirill", name: "Кирилл", specialty: "Гитара" },
+                    ],
+                    vocal: [
+                      { value: "anastasia", name: "Анастасия", specialty: "Эстрадный вокал" },
+                      { value: "alexandra", name: "Александра", specialty: "Эстрадный вокал" },
+                      { value: "ivan", name: "Иван", specialty: "Эстрадный вокал" },
+                    ],
+                    ukulele: [{ value: "boris_ukulele", name: "Борис", specialty: "Укулеле" }],
+                    piano: [],
+                    songwriting: [],
+                    ensemble: [],
+                  }
+
+                  const disciplineSelect = document.getElementById("discipline")
+                  const teacherSelect = document.getElementById("teacher")
+                  const teacherInfo = document.getElementById("teacherInfo")
+                  const disciplineImage = document.getElementById("disciplineImage")
+
+                  disciplineSelect.addEventListener("change", function () {
+                    const selectedDiscipline = this.value
+
+                    if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
+                      disciplineImage.style.opacity = "0"
+                      setTimeout(() => {
+                        disciplineImage.src = disciplineImages[selectedDiscipline]
+                        disciplineImage.style.opacity = "1"
+                      }, 200)
+                    }
+
+                    teacherSelect.innerHTML = '<option value="">Выберите преподавателя</option>'
+                    teacherInfo.classList.remove("visible")
+                    teacherInfo.innerHTML = ""
+
+                    if (selectedDiscipline) {
+                      const teachers = teachersByDiscipline[selectedDiscipline]
+
+                      if (teachers.length === 0) {
+                        teacherSelect.innerHTML = '<option value="">Скоро (преподавателей пока нет)</option>'
+                        teacherSelect.disabled = true
+                      } else {
+                        teacherSelect.disabled = false
+                        teachers.forEach((teacher) => {
+                          const option = document.createElement("option")
+                          option.value = teacher.value
+                          option.textContent = teacher.name
+                          option.dataset.specialty = teacher.specialty
+                          teacherSelect.appendChild(option)
+                        })
+                      }
+                    } else {
+                      teacherSelect.innerHTML = '<option value="">Сначала выберите дисциплину</option>'
+                      teacherSelect.disabled = false
+                    }
+                  })
+
+                  teacherSelect.addEventListener("change", function () {
+                    const selectedOption = this.options[this.selectedIndex]
+
+                    if (this.value && selectedOption.dataset.specialty) {
+                      teacherInfo.innerHTML = `<strong>${selectedOption.textContent}</strong><br>Специальность: ${selectedOption.dataset.specialty}`
+                      teacherInfo.classList.add("visible")
+                    } else {
+                      teacherInfo.classList.remove("visible")
+                      teacherInfo.innerHTML = ""
+                    }
+                  })
+                })()
+              });
+            </script>
+          </div>
+        </div>
+        <div class="contact-register-container24">
+          <div class="contact-register-container25">
+            <script defer="" data-name="feedback-form-interactive">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const disciplineImages = {
+                    guitar: "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    vocal: "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    piano: "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ukulele: "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    songwriting: "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    ensemble: "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                  }
+
+                  const teachersByDiscipline = {
+                    guitar: ["Александр", "Борис", "Кирилл"],
+                    vocal: ["Анастасия", "Александра", "Иван (Эстрадный вокал)"],
+                    piano: ["Скоро появится"],
+                    ukulele: ["Борис"],
+                    songwriting: ["Скоро появится"],
+                    ensemble: ["Скоро появится"],
+                  }
+
+                  const disciplineSelect = document.getElementById("discipline")
+                  const teacherSelect = document.getElementById("teacher")
+                  const disciplineImage = document.getElementById("disciplineImage")
+
+                  disciplineSelect.addEventListener("change", function () {
+                    const selectedDiscipline = this.value
+
+                    if (selectedDiscipline && disciplineImages[selectedDiscipline]) {
+                      disciplineImage.style.opacity = "0"
+
+                      setTimeout(() => {
+                        disciplineImage.src = disciplineImages[selectedDiscipline]
+                        disciplineImage.style.opacity = "1"
+                      }, 250)
+                    }
+
+                    teacherSelect.innerHTML = '<option value="">Выберите...</option>'
+
+                    if (selectedDiscipline && teachersByDiscipline[selectedDiscipline]) {
+                      const teachers = teachersByDiscipline[selectedDiscipline]
+                      teachers.forEach((teacher) => {
+                        const option = document.createElement("option")
+                        option.value = teacher.toLowerCase().replace(/\s+/g, "-")
+                        option.textContent = teacher
+                        teacherSelect.appendChild(option)
+                      })
+                      teacherSelect.disabled = false
+                    } else {
+                      const option = document.createElement("option")
+                      option.value = ""
+                      option.textContent = "Сначала выберите дисциплину"
+                      teacherSelect.appendChild(option)
+                      teacherSelect.disabled = true
+                    }
+                  })
+                })()
+              });
+            </script>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer подключается через общий layout -->
+      <link rel="canonical" href="https://www.mikealina.ru/contact-register" />
+    </div>
   </body>
 </html>
