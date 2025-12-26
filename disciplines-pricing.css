@@ -182,3 +182,23 @@
   display: block;
   min-height: 100vh;
 }
+
+/* Уменьшение размера заголовка "Наши дисциплины" */
+.disciplines-pricing-thq-hero-title-elm,
+.hero-disciplines__title {
+  font-size: clamp(2rem, 1.5rem + 2vw, 2.8rem) !important;
+}
+
+@media (max-width: 767px) {
+  .disciplines-pricing-thq-hero-title-elm,
+  .hero-disciplines__title {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 479px) {
+  .disciplines-pricing-thq-hero-title-elm,
+  .hero-disciplines__title {
+    font-size: 24px !important;
+  }
+}
