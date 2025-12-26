@@ -19,6 +19,10 @@
   height: 140px;
   max-width: 500px;
 }
+
+.navigation-thq-navigation-logo-elm {
+  text-decoration: none;
+}
  
 .navigation-thq-navigation-link-elm1 {
   text-decoration: none;
@@ -78,6 +82,20 @@
  
 .navigation-container7 {
   display: contents;
+}
+
+.navigation-logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.navigation-logo-image {
+  height: 96px;
+  width: auto;
+  max-height: none;
 }
  
 @media(max-width: 991px) {
