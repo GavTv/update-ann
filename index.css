@@ -14,6 +14,12 @@
   display: contents;
 }
 
+.navigation-thq-nav-logo-image-elm {
+  width: 265px;
+  height: 140px;
+  max-width: 500px;
+}
+
 .navigation-thq-navigation-logo-elm {
   text-decoration: none;
 }
@@ -76,6 +82,72 @@
 
 .navigation-container7 {
   display: contents;
+}
+
+.navigation-logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.navigation-logo-image {
+  height: 96px;
+  width: auto;
+  max-height: none;
+}
+
+@media (max-width: 991px) {
+  .navigation-thq-nav-logo-image-elm {
+    height: 104px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation-thq-nav-logo-image-elm {
+    width: 210px;
+    height: 96px;
+    max-width: 400px;
+  }
+  .home-thq-hero-title-elm,
+  .home-hero-title,
+  .hero-title {
+    font-size: 28px;
+  }
+  .home-text2 {
+    font-size: 25px;
+  }
+  .home-text3 {
+    font-size: 25px;
+  }
+  .home-text4 {
+    font-size: 25px;
+  }
+  .home-thq-hero-subtitle-elm {
+    font-size: 14px;
+  }
+  .home-thq-features-image-elm1 {
+    height: 370px;
+  }
+  .home-thq-features-image-elm2 {
+    height: 453px;
+  }
+  .home-thq-features-image-elm3 {
+    height: 300px;
+  }
+}
+
+@media (max-width: 479px) {
+  .navigation-thq-nav-logo-image-elm {
+    width: 131px;
+    height: 90px;
+    max-width: 350px;
+  }
+  .home-thq-hero-title-elm {
+    font-size: 28px;
+  }
 }
 
 .footer-wrapper {
@@ -183,55 +255,6 @@
 /* Slightly reduce hero title size site-wide (desktop + responsive) */
 .home-thq-hero-title-elm {
   font-size: clamp(2.4rem, 2.1rem + 2vw, 3.2rem);
-}
-.navigation-logo {
-  display: flex;
-  align-items: center;
-  height: auto;
-  max-height: none;
-  overflow: visible;
-}
-
-.navigation-logo-image {
-  height: 96px; /* ВАЖНО: сразу больше */
-  width: auto;
-  max-height: none;
-}
-
-@media (max-width: 479px) {
-  .home-thq-hero-title-elm {
-    font-size: 28px;
-  }
-}
-
-/* Apply same reduced size for small/medium mobile (up to 767px) */
-@media (max-width: 767px) {
-  .home-thq-hero-title-elm,
-  .home-hero-title,
-  .hero-title {
-    font-size: 28px;
-  }
-  .home-text2 {
-    font-size: 25px;
-  }
-  .home-text3 {
-    font-size: 25px;
-  }
-  .home-text4 {
-    font-size: 25px;
-  }
-  .home-thq-hero-subtitle-elm {
-    font-size: 14px;
-  }
-  .home-thq-features-image-elm1 {
-    height: 370px;
-  }
-  .home-thq-features-image-elm2 {
-    height: 453px;
-  }
-  .home-thq-features-image-elm3 {
-    height: 300px;
-  }
 }
 
 /* Desktop-only: nudge the second features image slightly down */

@@ -14,6 +14,12 @@
   display: contents;
 }
  
+.navigation-thq-nav-logo-image-elm {
+  width: 265px;
+  height: 140px;
+  max-width: 500px;
+}
+ 
 .navigation-thq-navigation-logo-elm {
   text-decoration: none;
 }
@@ -76,6 +82,77 @@
  
 .navigation-container7 {
   display: contents;
+}
+
+.navigation-logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+.navigation-logo-image {
+  height: 96px;
+  width: auto;
+  max-height: none;
+}
+ 
+@media(max-width: 991px) {
+  .navigation-thq-nav-logo-image-elm {
+    height: 104px;
+    max-width: 450px;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .navigation-thq-nav-logo-image-elm {
+    width: 210px;
+    height: 96px;
+    max-width: 400px;
+  }
+  .page-thq-gallery-video-play-icon-elm {
+    width: 48px;
+    height: 48px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .navigation-thq-nav-logo-image-elm {
+    width: 131px;
+    height: 90px;
+    max-width: 350px;
+  }
+  .page-thq-hero-title-elm {
+    font-size: 40px;
+  }
+  .page-thq-section-content-elm1 {
+    font-size: 16px;
+  }
+  .page-thq-section-title-elm1 {
+    font-size: 32px;
+  }
+  .page-thq-teacher-card-image-elm1 {
+    height: 359px;
+  }
+  .page-thq-teacher-card-image-elm3 {
+    height: 367px;
+  }
+  .page-thq-teacher-card-image-elm4 {
+    height: 358px;
+  }
+  .page-thq-teacher-card-image-elm6 {
+    height: 382px;
+  }
+  .page-thq-gallery-video-image-elm1 {
+    height: 447px;
+  }
+  .page-thq-gallery-video-image-elm2 {
+    height: 499px;
+  }
+  .page-thq-gallery-video-image-elm3 {
+    height: 344px;
+  }
 }
 
 .footer-wrapper {
@@ -158,45 +235,4 @@
  
 .page-container5 {
   display: contents;
-}
- 
-@media(max-width: 767px) {
-  .page-thq-gallery-video-play-icon-elm {
-    width: 48px;
-    height: 48px;
-  }
-}
- 
-@media(max-width: 479px) {
-  .page-thq-hero-title-elm {
-    font-size: 40px;
-  }
-  .page-thq-section-content-elm1 {
-    font-size: 16px;
-  }
-  .page-thq-section-title-elm1 {
-    font-size: 32px;
-  }
-  .page-thq-teacher-card-image-elm1 {
-    height: 359px;
-  }
-  .page-thq-teacher-card-image-elm3 {
-    height: 367px;
-  }
-  .page-thq-teacher-card-image-elm4 {
-    height: 358px;
-  }
-  .page-thq-teacher-card-image-elm6 {
-    height: 382px;
-  }
-  .page-thq-gallery-video-image-elm1 {
-    height: 447px;
-  }
-  .page-thq-gallery-video-image-elm2 {
-    height: 499px;
-  }
-  .page-thq-gallery-video-image-elm3 {
-    height: 344px;
-  }
-  
 }
