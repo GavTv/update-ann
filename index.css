@@ -256,6 +256,10 @@
 .home-thq-hero-title-elm {
   font-size: clamp(2.4rem, 2.1rem + 2vw, 3.2rem);
 }
+.hero-button {
+  position: relative;
+  z-index: 3;
+}
 
 /* Desktop-only: nudge the second features image slightly down */
 @media (min-width: 768px) {

@@ -2,10 +2,16 @@
 <html lang="ru">
   <head>
     <title>Контакты и запись на занятия — Звук Вокруг</title>
+    <link rel="canonical" href="https://zvschool.ru/contact-register.html" />
+
     <meta property="og:title" content="Контакты — Звук Вокруг" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      name="description"
+      content="Контакты музыкальной школы Sound Around в Москве. Адреса студий, телефон, WhatsApp и запись на пробный урок."
+    />
 
     <style data-tag="reset-style-sheet">
       html {
@@ -800,7 +806,7 @@
                 <img
                   id="disciplineImage"
                   alt="Музыкальная школа"
-                  src="https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                  src="/public/Варианты/Вокал.webp"
                   class="feedback-form-image"
                 />
                 <div class="feedback-form-image-overlay">
@@ -976,18 +982,13 @@
                 (function () {
                   (function () {
                     const disciplineImages = {
-                      guitar:
-                        "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      vocal:
-                        "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      piano:
-                        "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ukulele:
-                        "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      songwriting:
-                        "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ensemble:
-                        "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                      default: "/public/images/gener.webp",
+                      guitar: "/public/images/guitar.webp",
+                      vocal: "/public/images/vocal.webp",
+                      piano: "/public/images/piano.webp",
+                      ukulele: "/public/images/ukulele.webp",
+                      songwriting: "/public/images/songwriting.webp",
+                      ensemble: "/public/images/ensemble.webp",
                     };
 
                     const disciplineSelect =
@@ -1220,21 +1221,6 @@
               <script defer="" data-name="feedback-form-interactive">
                 document.addEventListener("DOMContentLoaded", function () {
                   (function () {
-                    const disciplineImages = {
-                      guitar:
-                        "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      vocal:
-                        "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      piano:
-                        "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ukulele:
-                        "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      songwriting:
-                        "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                      ensemble:
-                        "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    };
-
                     const teachersByDiscipline = {
                       guitar: ["Александр", "Борис", "Кирилл"],
                       vocal: [
@@ -1939,19 +1925,23 @@
               document.addEventListener("DOMContentLoaded", function () {
                 (function () {
                   const disciplineImages = {
-                    guitar:
-                      "https://images.pexels.com/photos/8044065/pexels-photo-8044065.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    vocal:
-                      "https://images.pexels.com/photos/7586653/pexels-photo-7586653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    piano:
-                      "https://images.pexels.com/photos/6647585/pexels-photo-6647585.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ukulele:
-                      "https://images.pexels.com/photos/5271143/pexels-photo-5271143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    songwriting:
-                      "https://images.pexels.com/photos/7097185/pexels-photo-7097185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ensemble:
-                      "https://images.pexels.com/photos/7502619/pexels-photo-7502619.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    default: "/public/images/gener.webp",
+                    guitar: "/public/images/guitar.webp",
+                    vocal: "/public/images/vocal.webp",
+                    piano: "/public/images/piano.webp",
+                    ukulele: "/public/images/ukulele.webp",
+                    songwriting: "/public/images/songwriting.webp",
+                    ensemble: "/public/images/ensemble.webp",
                   };
+                  // 🔹 элемент, куда ты МЕНЯЕШЬ картинку при выборе дисциплины
+                  const imageContainer = document.querySelector(
+                    ".contact-register-container23"
+                  );
+
+                  // 🔹 ставим ГЛАВНУЮ картинку при загрузке страницы
+                  if (imageContainer && disciplineImages.default) {
+                    imageContainer.style.backgroundImage = `url(${disciplineImages.default})`;
+                  }
 
                   const teachersByDiscipline = {
                     guitar: [
@@ -2065,18 +2055,13 @@
               document.addEventListener("DOMContentLoaded", function () {
                 (function () {
                   const disciplineImages = {
-                    guitar:
-                      "https://images.pexels.com/photos/7516258/pexels-photo-7516258.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    vocal:
-                      "https://images.pexels.com/photos/7086742/pexels-photo-7086742.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    piano:
-                      "https://images.pexels.com/photos/5070054/pexels-photo-5070054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ukulele:
-                      "https://images.pexels.com/photos/8512535/pexels-photo-8512535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    songwriting:
-                      "https://images.pexels.com/photos/10933699/pexels-photo-10933699.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-                    ensemble:
-                      "https://images.pexels.com/photos/5650910/pexels-photo-5650910.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+                    default: "/public/images/gener.webp",
+                    guitar: "/public/images/guitar.webp",
+                    vocal: "/public/images/vocal.webp",
+                    piano: "/public/images/piano.webp",
+                    ukulele: "/public/images/ukulele.webp",
+                    songwriting: "/public/images/songwriting.webp",
+                    ensemble: "/public/images/ensemble.webp",
                   };
 
                   const teachersByDiscipline = {
