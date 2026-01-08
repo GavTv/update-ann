@@ -218,6 +218,7 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
   </head>
+
   <body>
     <link rel="stylesheet" href="./style.css" />
     <div>
@@ -696,42 +697,34 @@
         </navigation-wrapper>
         <section class="hero-section">
           <video
-            src="/public/анимация/tik.mp4"
-            loop="true"
-            muted="true"
-            poster="/public/анимация/tik.mp4"
-            autoplay="true"
-            playsinline="true"
             class="hero-video"
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="./public/animation/poster.jpg"
+            data-src="./public/animation/tik.mp4"
           ></video>
+
           <div class="hero-overlay"></div>
+
           <div class="hero-content">
-            <div class="hero-text-wrapper visually-hidden">
-              <p
-                class="home-thq-hero-subtitle-elm hero-subtitle home-hero-subtitle"
-              >
-                <!-- Откройте свой голос, инструмент или сцену в студии для смелых
-                открытий. Мы сочетаем строгую технику с творческим вдохновением,
-                помогая ученикам любого возраста совершенствовать мастерство,
-                обретать уверенность и создавать яркие выступления. -->
-              </p>
-              <a
-                href="/contact-register.html"
-                class="home-thq-btn-elm1 btn-xl btn btn-accent hero-cta"
-              >
-                Запись на пробный урок
-              </a>
-            </div>
-            <div class="home-thq-hero-phone-block-elm hero-phone-block">
+            <a
+              href="/contact-register.html"
+              class="home-thq-btn-elm1 btn-xl btn btn-accent hero-cta"
+            >
+              Запись на пробный урок
+            </a>
+
+            <div class="hero-phone-block">
               <span class="hero-phone-label">Позвонить</span>
               <a href="tel:+79162353381">
-                <div class="home-thq-hero-phone-number-elm hero-phone-number">
-                  <span>+7 (916) 235-33-81</span>
-                </div>
+                <span class="hero-phone-number">+7 (916) 235-33-81</span>
               </a>
             </div>
           </div>
         </section>
+
         <section class="features-section">
           <div class="features-container">
             <article class="features-card">
@@ -1662,5 +1655,29 @@
         </footer-wrapper>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const video = document.querySelector(".hero-video");
+        if (!video) return;
+
+        // не грузим видео на мобильных
+        if (window.innerWidth < 768) return;
+
+        const src = video.dataset.src;
+        if (!src) return;
+
+        const source = document.createElement("source");
+        source.src = src;
+        source.type = "video/mp4";
+
+        video.appendChild(source);
+        video.load();
+
+        video.addEventListener("loadeddata", () => {
+          video.classList.add("is-loaded");
+          video.play().catch(() => {});
+        });
+      });
+    </script>
   </body>
 </html>
