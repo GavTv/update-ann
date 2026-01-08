@@ -318,10 +318,9 @@ h4 {
   }
 }
 
+/* FIX: mobile menu scroll without blocking page */
 @media (max-width: 767px) {
-  nav,
-  .navigation-wrapper,
-  .navigation-container5 {
+  .navigation-mobile-overlay.navigation-mobile-open {
     height: 100dvh;
     max-height: 100dvh;
     overflow-y: auto;
