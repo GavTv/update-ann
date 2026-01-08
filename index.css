@@ -317,3 +317,15 @@ h4 {
     opacity: 1;
   }
 }
+
+@media (max-width: 767px) {
+  nav,
+  .navigation-wrapper,
+  .navigation-container5 {
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: calc(96px + env(safe-area-inset-bottom));
+  }
+}
