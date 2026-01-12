@@ -840,9 +840,9 @@
                   class="contact---register-feedback-form-header4 feedback-form-header"
                 >
                   <h2 class="section-title">
-                    <span>#</span>
+                    <span></span>
                     <br />
-                    <span style="color: red">В разработке!</span>
+                    <span style="color: red">Записаться</span>
                   </h2>
                   <p
                     class="contact---register-feedback-form-description4 feedback-form-description"
@@ -852,6 +852,7 @@
                   </p>
                 </div>
                 <form
+                  id="contactForm"
                   action="/submit"
                   method="POST"
                   data-form-id="4b6e7819-f331-4c3f-88e3-36222ac7d3a8"
@@ -965,7 +966,7 @@
                     data-form-field-id="thq_button_oOef"
                     class="contact---register-btn-lg1 btn btn-primary btn-lg feedback-form-submit"
                   >
-                    В разработке!
+                    Отправить
                   </button>
                 </form>
               </div>
@@ -2102,7 +2103,7 @@
                     }
 
                     teacherSelect.innerHTML =
-                      '<option value="">Выберите...</option>';
+                      '<option value="" disabled selected>Выберите...</option>';
 
                     if (
                       selectedDiscipline &&
@@ -2134,5 +2135,53 @@
         </div>
       </div>
     </div>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const disciplineSelect = document.getElementById("discipline");
+          const discipline =
+            disciplineSelect.options[disciplineSelect.selectedIndex]
+              ?.textContent || "";
+          const levelSelect = document.getElementById("level");
+          const level =
+            levelSelect.options[levelSelect.selectedIndex]?.textContent || "";
+          const comments = document.getElementById("comments").value;
+
+          const BOT_TOKEN = "8566623290:AAHbjyjRRq5bBAYNODLUS3xw7ILg-VQukDs";
+          const CHAT_ID = "-5238606294";
+
+          const message = `
+🎵 Новая заявка с сайта
+
+📚 Дисциплина: ${discipline}
+🎯 Уровень: ${level}
+💬 Комментарий: ${comments || "—"}
+  `;
+
+          fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              chat_id: CHAT_ID,
+              text: message,
+              parse_mode: "HTML",
+            }),
+          })
+            .then((response) => {
+              if (!response.ok) throw new Error("Ошибка Telegram");
+              alert("Заявка отправлена! Мы скоро свяжемся с вами 🎶");
+              e.target.reset();
+            })
+            .catch((error) => {
+              console.error(error);
+              alert("Ошибка отправки 😢");
+            });
+        });
+    </script>
   </body>
 </html>
