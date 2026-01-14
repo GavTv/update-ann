@@ -945,6 +945,25 @@
                     class="contact---register-feedback-form-field feedback-form-field"
                   >
                     <label
+                      for="phone"
+                      class="contact---register-feedback-form-label4 feedback-form-label"
+                    >
+                      Телефон
+                    </label>
+                    <input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      required="true"
+                      placeholder="+7 (___) ___-__-__"
+                      data-form-field-id="phone"
+                      class="contact---register-feedback-form-input4 feedback-form-input"
+                    />
+                  </div>
+                  <div
+                    class="contact---register-feedback-form-field feedback-form-field"
+                  >
+                    <label
                       for="comments"
                       class="contact---register-feedback-form-label4 feedback-form-label"
                     >
@@ -2148,6 +2167,7 @@
           const levelSelect = document.getElementById("level");
           const level =
             levelSelect.options[levelSelect.selectedIndex]?.textContent || "";
+          const phone = document.getElementById("phone").value;
           const comments = document.getElementById("comments").value;
 
           const BOT_TOKEN = "8566623290:AAHbjyjRRq5bBAYNODLUS3xw7ILg-VQukDs";
@@ -2158,6 +2178,7 @@
 
 📚 Дисциплина: ${discipline}
 🎯 Уровень: ${level}
+📞 Телефон: ${phone || "—"}
 💬 Комментарий: ${comments || "—"}
   `;
 

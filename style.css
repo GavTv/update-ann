@@ -5507,6 +5507,18 @@
   border-radius: var(--border-radius-control);
 }
 
+.contact---register-feedback-form-input4 {
+  color: var(--color-on-surface);
+  width: 100%;
+  border: 2px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  background: var(--color-surface-elevated);
+  transition: all 0.3s ease;
+  font-family: var(--font-family-body);
+  border-radius: var(--border-radius-control);
+}
+
 .contact---register-feedback-form-select4 {
   color: var(--color-on-surface);
   width: 100%;
@@ -5547,6 +5559,10 @@
   border-color: var(--color-primary);
 }
 
+.contact---register-feedback-form-input4:hover {
+  border-color: var(--color-primary);
+}
+
 .contact---register-feedback-form-textarea4:focus {
   outline: none;
   box-shadow: 0 0 0 3px
@@ -5554,7 +5570,19 @@
   border-color: var(--color-primary);
 }
 
+.contact---register-feedback-form-input4:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--color-primary) 20%, transparent);
+  border-color: var(--color-primary);
+}
+
 .contact---register-feedback-form-textarea4::placeholder {
+  color: var(--color-on-surface-secondary);
+  opacity: 0.6;
+}
+
+.contact---register-feedback-form-input4::placeholder {
   color: var(--color-on-surface-secondary);
   opacity: 0.6;
 }
