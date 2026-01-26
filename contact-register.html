@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <title>Контакты и запись на занятия — Звук Вокруг</title>
@@ -189,17 +189,17 @@
             return;
           }
         }
-        (k = e.createElement(t)),
+        ((k = e.createElement(t)),
           (a = e.getElementsByTagName(t)[0]),
           (k.async = 1),
           (k.src = r),
-          a.parentNode.insertBefore(k, a);
+          a.parentNode.insertBefore(k, a));
       })(
         window,
         document,
         "script",
         "https://mc.yandex.ru/metrika/tag.js?id=105973188",
-        "ym"
+        "ym",
       );
 
       ym(105973188, "init", {
@@ -653,7 +653,7 @@
                       const navClose = document.getElementById("navClose");
                       const navOverlay = document.getElementById("navOverlay");
                       const navLinks = document.querySelectorAll(
-                        ".navigation-mobile-link"
+                        ".navigation-mobile-link",
                       );
 
                       function openMenu() {
@@ -685,7 +685,7 @@
                         if (
                           e.key === "Escape" &&
                           navOverlay.classList.contains(
-                            "navigation-mobile-open"
+                            "navigation-mobile-open",
                           )
                         ) {
                           closeMenu();
@@ -842,13 +842,13 @@
                   <h2 class="section-title">
                     <span></span>
                     <br />
-                    <span style="color: red">Обратная связь</span>
+                    <span style="color: rgb(0, 0, 0)">Обратная связь</span>
                   </h2>
                   <p
                     class="contact---register-feedback-form-description4 feedback-form-description"
                   >
                     Заполните форму, и мы свяжемся с вами для подтверждения
-                    записи
+                    записи.
                   </p>
                 </div>
                 <form
@@ -987,6 +987,10 @@
                   >
                     Отправить
                   </button>
+                  <p class="contact-register-consent-note">
+                    Нажимая кнопку „Отправить“, вы соглашаетесь с Политикой
+                    конфиденциальности.
+                  </p>
                 </form>
               </div>
             </div>
@@ -1521,10 +1525,10 @@
                   });
 
                   const tabs = document.querySelectorAll(
-                    ".disciplines-tabs__tab"
+                    ".disciplines-tabs__tab",
                   );
                   const panels = document.querySelectorAll(
-                    ".disciplines-tabs__panel"
+                    ".disciplines-tabs__panel",
                   );
 
                   tabs.forEach((tab) => {
@@ -1532,10 +1536,10 @@
                       const targetPanel = tab.getAttribute("data-tab");
 
                       tabs.forEach((t) =>
-                        t.classList.remove("disciplines-tabs__tab--active")
+                        t.classList.remove("disciplines-tabs__tab--active"),
                       );
                       panels.forEach((p) =>
-                        p.classList.remove("disciplines-tabs__panel--active")
+                        p.classList.remove("disciplines-tabs__panel--active"),
                       );
 
                       tab.classList.add("disciplines-tabs__tab--active");
@@ -1546,19 +1550,19 @@
                   });
 
                   const videoItems = document.querySelectorAll(
-                    ".video-gallery__item--video"
+                    ".video-gallery__item--video",
                   );
                   videoItems.forEach((item) => {
                     const video = item.querySelector("video");
                     if (video) {
                       video.addEventListener("play", () => {
                         item.querySelector(
-                          ".video-gallery__play-overlay"
+                          ".video-gallery__play-overlay",
                         ).style.display = "none";
                       });
                       video.addEventListener("pause", () => {
                         item.querySelector(
-                          ".video-gallery__play-overlay"
+                          ".video-gallery__play-overlay",
                         ).style.display = "flex";
                       });
                     }
@@ -1824,7 +1828,9 @@
                             </g>
                           </svg>
                         </div>
-                        <span class="footer-address"> Самокатная 4ас1 </span>
+                        <span class="footer-address"
+                          >улица Самокатная 4ас1
+                        </span>
                       </div>
                       <a
                         href="https://yandex.ru/maps/-/CLsyNG23"
@@ -1894,7 +1900,7 @@
                   document.addEventListener("DOMContentLoaded", function () {
                     (function () {
                       const footerSocialIcons = document.querySelectorAll(
-                        ".footer-social-icon"
+                        ".footer-social-icon",
                       );
 
                       footerSocialIcons.forEach((icon) => {
@@ -1957,7 +1963,7 @@
 
                   // 🔹 элемент, куда ты МЕНЯЕШЬ картинку при выборе дисциплины
                   const imageContainer = document.querySelector(
-                    ".contact-register-container23"
+                    ".contact-register-container23",
                   );
 
                   // 🔹 ставим ГЛАВНУЮ картинку при загрузке страницы
