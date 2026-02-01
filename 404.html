@@ -506,7 +506,7 @@
                     © 2025 Студия Звук Вокруг. Все права защищены.
                   </p>
                   <div class="footer-legal-links">
-                    <a href="#">
+                    <a href="#" data-privacy-open>
                       <div class="footer-legal-link">
                         <span>Политика конфиденциальности</span>
                       </div>
@@ -581,6 +581,115 @@
           </div>
         </div>
       </footer-wrapper>
+      <div class="privacy-modal" id="privacyModal" aria-hidden="true">
+        <div class="privacy-modal-overlay" data-privacy-close></div>
+        <div
+          class="privacy-modal-dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="privacyModalTitle"
+        >
+          <button
+            type="button"
+            class="privacy-modal-close"
+            data-privacy-close
+            aria-label="Закрыть"
+          >
+            x
+          </button>
+          <div class="privacy-modal-body">
+            <h2 id="privacyModalTitle">Политика конфиденциальности</h2>
+            <p>
+              Настоящая Политика конфиденциальности определяет порядок обработки
+              и защиты персональных данных пользователей сайта.
+            </p>
+            <p>
+              <strong>Оператором персональных данных является:</strong>
+              <br />
+              Индивидуальный предприниматель Жирова Анна Андреевна,
+              <br />
+              ИНН 774312630337, ОГРНИП 324774600079280.
+            </p>
+            <h3>1. Персональные данные</h3>
+            <p>
+              Оператор обрабатывает следующие персональные данные пользователей:
+            </p>
+            <ul>
+              <li>фамилия, имя, отчество;</li>
+              <li>номер телефона;</li>
+              <li>сведения о музыкальной группе;</li>
+              <li>
+                сведения о музыкальном инструменте, на котором играет
+                пользователь.
+              </li>
+            </ul>
+            <h3>2. Цель обработки персональных данных</h3>
+            <p>
+              Персональные данные обрабатываются с целью обработки заявки,
+              обратной связи и подбора подходящего формата взаимодействия с
+              пользователем.
+            </p>
+            <h3>3. Обработка и защита данных</h3>
+            <p>
+              Обработка персональных данных осуществляется в соответствии с
+              законодательством Российской Федерации. Персональные данные не
+              передаются третьим лицам.
+            </p>
+            <h3>4. Срок обработки</h3>
+            <p>
+              Персональные данные обрабатываются до достижения цели обработки
+              либо до момента отзыва согласия.
+            </p>
+            <h3>5. Отзыв согласия</h3>
+            <p>
+              Пользователь вправе отозвать согласие на обработку персональных
+              данных, направив обращение через контактные данные, указанные на
+              сайте.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script defer data-name="privacy-modal">
+        document.addEventListener("DOMContentLoaded", function () {
+          const modal = document.getElementById("privacyModal");
+          if (!modal) return;
+
+          const openers = document.querySelectorAll("[data-privacy-open]");
+          const closers = modal.querySelectorAll("[data-privacy-close]");
+
+          const openModal = (event) => {
+            if (event) event.preventDefault();
+            modal.classList.add("is-visible");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("privacy-modal-open");
+          };
+
+          const closeModal = () => {
+            modal.classList.remove("is-visible");
+            modal.setAttribute("aria-hidden", "true");
+            document.body.classList.remove("privacy-modal-open");
+          };
+
+          openers.forEach((opener) =>
+            opener.addEventListener("click", openModal)
+          );
+          closers.forEach((closer) =>
+            closer.addEventListener("click", function (event) {
+              event.preventDefault();
+              closeModal();
+            })
+          );
+
+          document.addEventListener("keydown", function (event) {
+            if (
+              event.key === "Escape" &&
+              modal.classList.contains("is-visible")
+            ) {
+              closeModal();
+            }
+          });
+        });
+      </script>
     </div>
   </body>
 </html>
