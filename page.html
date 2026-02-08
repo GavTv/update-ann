@@ -706,11 +706,10 @@
                   <p
                     class="section-content founder-hero-philosophy page-thq-section-content-elm1"
                   >
-                    О себе на сайте, добавь пожалуйста такой текст: Я Анна
-                    Жирова, руководитель вокальной школы-студии "Звук Вокруг".
-                    Мой профессиональный путь в мире музыки насчитывает более 19
-                    лет. Я окончила колледж при Российской академии музыки имени
-                    Гнесиных, а затем и Московский педагогический
+                    Я Анна Жирова, руководитель вокальной школы-студии "Звук
+                    Вокруг". Мой профессиональный путь в мире музыки насчитывает
+                    более 19 лет. Я окончила колледж при Российской академии
+                    музыки имени Гнесиных, а затем и Московский педагогический
                     государственный университет. Для совершенствования
                     экспертизы в области современной музыки я прошла программу
                     повышения квалификации в знаменитом Berklee College of Music
@@ -2026,13 +2025,13 @@
           };
 
           openers.forEach((opener) =>
-            opener.addEventListener("click", openModal)
+            opener.addEventListener("click", openModal),
           );
           closers.forEach((closer) =>
             closer.addEventListener("click", function (event) {
               event.preventDefault();
               closeModal();
-            })
+            }),
           );
 
           document.addEventListener("keydown", function (event) {
