@@ -724,15 +724,11 @@
           </div>
         </div>
         <section class="hero-disciplines">
-          <video
-            src="public/animation/видос.mp4"
-            loop
-            muted
-            autoplay
-            playsinline
-            preload="metadata"
+          <img
+            src="/public/допы/Гитарчики.jpg"
+            alt="Наши дисциплины"
             class="hero-disciplines__video"
-          ></video>
+          />
 
           <div class="hero-disciplines__overlay"></div>
           <div class="hero-disciplines__content">
@@ -1701,9 +1697,9 @@
                             </g>
                           </svg>
                         </div>
-                        <span class="footer-address"
+                        <!-- <span class="footer-address"
                           >улица Самокатная 4ас1
-                        </span>
+                        </span> -->
                       </div>
                       <a
                         href="https://yandex.ru/maps/-/CLsyNG23"
@@ -1828,7 +1824,8 @@
               </p>
               <h3>1. Персональные данные</h3>
               <p>
-                Оператор обрабатывает следующие персональные данные пользователей:
+                Оператор обрабатывает следующие персональные данные
+                пользователей:
               </p>
               <ul>
                 <li>фамилия, имя, отчество;</li>
@@ -1887,13 +1884,13 @@
             };
 
             openers.forEach((opener) =>
-              opener.addEventListener("click", openModal)
+              opener.addEventListener("click", openModal),
             );
             closers.forEach((closer) =>
               closer.addEventListener("click", function (event) {
                 event.preventDefault();
                 closeModal();
-              })
+              }),
             );
 
             document.addEventListener("keydown", function (event) {

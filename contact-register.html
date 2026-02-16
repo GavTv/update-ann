@@ -1154,7 +1154,7 @@
                       </div>
                     </a>
                   </article>
-                  <article class="location-card">
+                  <!-- <article class="location-card">
                     <div class="location-card-decorative-shape"></div>
                     <div class="location-card-header">
                       <div class="location-card-icon-wrapper">
@@ -1244,7 +1244,7 @@
                         <span>Открыть маршрут</span>
                       </div>
                     </a>
-                  </article>
+                  </article> -->
                 </div>
               </div>
             </section>
@@ -1836,9 +1836,9 @@
                             </g>
                           </svg>
                         </div>
-                        <span class="footer-address"
+                        <!-- <span class="footer-address"
                           >улица Самокатная 4ас1
-                        </span>
+                        </span> -->
                       </div>
                       <a
                         href="https://yandex.ru/maps/-/CLsyNG23"
@@ -1904,10 +1904,10 @@
                   data-cfasync="false"
                   src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
                 ></script>
-              <script defer="" data-name="footer-interactions">
-                document.addEventListener("DOMContentLoaded", function () {
-                  (function () {
-                    const footerSocialIcons = document.querySelectorAll(
+                <script defer="" data-name="footer-interactions">
+                  document.addEventListener("DOMContentLoaded", function () {
+                    (function () {
+                      const footerSocialIcons = document.querySelectorAll(
                         ".footer-social-icon",
                       );
 
@@ -2248,13 +2248,16 @@
             ИНН 774312630337, ОГРНИП 324774600079280.
           </p>
           <h3>1. Персональные данные</h3>
-          <p>Оператор обрабатывает следующие персональные данные пользователей:</p>
+          <p>
+            Оператор обрабатывает следующие персональные данные пользователей:
+          </p>
           <ul>
             <li>фамилия, имя, отчество;</li>
             <li>номер телефона;</li>
             <li>сведения о музыкальной группе;</li>
             <li>
-              сведения о музыкальном инструменте, на котором играет пользователь.
+              сведения о музыкальном инструменте, на котором играет
+              пользователь.
             </li>
           </ul>
           <h3>2. Цель обработки персональных данных</h3>
@@ -2271,8 +2274,8 @@
           </p>
           <h3>4. Срок обработки</h3>
           <p>
-            Персональные данные обрабатываются до достижения цели обработки
-            либо до момента отзыва согласия.
+            Персональные данные обрабатываются до достижения цели обработки либо
+            до момента отзыва согласия.
           </p>
           <h3>5. Отзыв согласия</h3>
           <p>
@@ -2304,16 +2307,21 @@
           document.body.classList.remove("privacy-modal-open");
         };
 
-        openers.forEach((opener) => opener.addEventListener("click", openModal));
+        openers.forEach((opener) =>
+          opener.addEventListener("click", openModal),
+        );
         closers.forEach((closer) =>
           closer.addEventListener("click", function (event) {
             event.preventDefault();
             closeModal();
-          })
+          }),
         );
 
         document.addEventListener("keydown", function (event) {
-          if (event.key === "Escape" && modal.classList.contains("is-visible")) {
+          if (
+            event.key === "Escape" &&
+            modal.classList.contains("is-visible")
+          ) {
             closeModal();
           }
         });
